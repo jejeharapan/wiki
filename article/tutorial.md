@@ -188,6 +188,27 @@ sudo docker compose up --build -d
 
 ---
 
+### G. Blok Konten Buka-Tutup (Expand / Collapse Accordion)
+
+#### Sintaks Kode:
+```markdown
+??? note "Klik untuk membuka / menutup grup detail"
+    Ini adalah isi grup konten yang dapat di-expand (dibuka) atau di-collapse (ditutup) oleh pengguna.
+
+???+ tip "Grup terbuka secara bawaan (Expand by Default)"
+    Grup ini secara bawaan terbuka saat halaman dimuat, namun tetap dapat ditutup oleh pengguna.
+```
+
+#### Hasil Tampilan (Preview):
+
+??? note "Klik untuk membuka / menutup grup detail"
+    Ini adalah isi grup konten yang dapat di-expand (dibuka) atau di-collapse (ditutup) oleh pengguna.
+
+???+ tip "Grup terbuka secara bawaan (Expand by Default)"
+    Grup ini secara bawaan terbuka saat halaman dimuat, namun tetap dapat ditutup oleh pengguna.
+
+---
+
 ## 🚀 4. Alur Kerja Kontribusi (Git Workflow)
 
 1. Buat artikel baru di folder terkait di bawah `/article/`.

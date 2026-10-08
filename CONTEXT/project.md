@@ -27,6 +27,7 @@ This project focuses on building an enterprise Wiki / Step-by-Step Guide platfor
   * Resizing: Use `![alt text](image.png){ width="30%" }` or `width="300"`.
   * Centering: Use `![alt text](image.png){ width="30%" .center }` (via `.center` utility class in `overrides/main.html`) or inline `{ style="display: block; margin: 0 auto;" }`. HTML `align=center` is invalid in CSS/Markdown and will not center images.
 * **Table of Contents Depth**: Restricted to second-level headings (`##`) across all pages via `markdown_extensions.toc.toc_depth: 2` in `mkdocs.yml`.
+* **Collapsible Groups & Navigation**: Interactive Expand / Collapse enabled for sidebar navigation groups (`navigation.expand` & `navigation.indexes` in `mkdocs.yml`) and in-page Markdown accordions (`pymdownx.details` via `??? note "Title"`).
 * **Documentation Engine**: Python MkDocs with standard `mkdocs-material` theme + native overrides
 * **Containerization**: Single-stage Docker container running `mkdocs serve --dev-addr=0.0.0.0:80` directly from `squidfunk/mkdocs-material:latest` without Nginx.
 * **Orchestration & Deployment**:
