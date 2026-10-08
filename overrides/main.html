@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+<style>
+    /* Header Bar Override */
+    .md-header {
+        background-color: #0F172A !important;
+    }
+
+    /* Navigation Tabs Bar Override */
+    .md-tabs {
+        background-color: #D84315 !important;
+    }
+
+    /* Footer Meta Bar Override ("Made with Material for MkDocs") */
+    .md-footer-meta {
+        background-color: #E65100 !important;
+    }
+
+    /* Image Centering Utility Class */
+    .md-typeset img.center,
+    img.center {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Page Metadata Badge Styling - Compact 11pt */
+    .doc-metadata {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 4px 10px;
+        margin-bottom: 1rem;
+        background-color: #F8F9FA;
+        border-left: 3px solid #E65100;
+        border-radius: 4px;
+        font-size: 11pt;
+        line-height: 1.4;
+        color: #4B5563;
+    }
+
+    [data-md-color-scheme="slate"] .doc-metadata {
+        background-color: #1E293B;
+        color: #94A3B8;
+        border-left-color: #FF6B00;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+  {% if page.meta.author or page.meta.last_updated %}
+    <div class="doc-metadata">
+      {% if page.meta.author %}
+        <span>👤 <strong>Penulis:</strong> {{ page.meta.author }}</span>
+      {% endif %}
+      {% if page.meta.author and page.meta.last_updated %}
+        <span>•</span>
+      {% endif %}
+      {% if page.meta.last_updated %}
+        <span>📅 <strong>Terakhir Diperbarui:</strong> {{ page.meta.last_updated }}</span>
+      {% endif %}
+    </div>
+  {% endif %}
+  {{ super() }}
+{% endblock %}
