@@ -28,7 +28,7 @@ This project focuses on building an enterprise Wiki / Step-by-Step Guide platfor
   * Centering: Use `![alt text](image.png){ width="30%" .center }` (via `.center` utility class in `overrides/main.html`) or inline `{ style="display: block; margin: 0 auto;" }`. HTML `align=center` is invalid in CSS/Markdown and will not center images.
 * **Table of Contents Depth**: Restricted to second-level headings (`##`) across all pages via `markdown_extensions.toc.toc_depth: 2` in `mkdocs.yml`.
 * **Documentation Engine**: Python MkDocs with standard `mkdocs-material` theme + native overrides
-* **Containerization**: Docker (multi-stage build with Nginx for static serving)
+* **Containerization**: Single-stage Docker container running `mkdocs serve --dev-addr=0.0.0.0:80` directly from `squidfunk/mkdocs-material:latest` without Nginx.
 * **Orchestration & Deployment**:
   * Local Development: `docker-compose.yaml`
   * Coolify Production Deployment: Docker Compose build method using `docker-compose-coolify.yaml` (must strictly end with `-coolify.yaml`)
@@ -51,7 +51,6 @@ All articles must follow a structured, multi-level folder hierarchy:
 │       └── coolify_deployment.md
 ├── mkdocs.yml
 ├── Dockerfile
-├── nginx.conf
 ├── .env
 ├── .env.example
 ├── docker-compose.yaml
@@ -73,8 +72,8 @@ All articles must follow a structured, multi-level folder hierarchy:
   1. `docker-compose-coolify.yaml` configured for Coolify deployment via Docker Compose build mode.
   2. Dynamic `APP_PORT` support added (IP:PORT binding when set, strictly `SITE_URL` reverse proxy when empty/null).
   3. `.env` and `.env.example` created for runtime environment settings.
-  4. Multi-stage `Dockerfile` with Nginx web server for production-grade static serving.
+  4. Single-stage `Dockerfile` serving MkDocs Material directly on port 80 without Nginx.
   5. Sample documentation created in `/article` adhering strictly to the requested nested structure (`group1/subgroup1/subsubgroup1/...`).
   6. Tutorial documentation created at **[`/article/tutorial.md`](file:///home/ubuntu/app/com.jejeharapan/wiki/article/tutorial.md)** detailing MkDocs writing standards in Bahasa Indonesia with live interactive previews. Hidden from top navigation tabs via explicit navigation listing in **[`/article/.pages`](file:///home/ubuntu/app/com.jejeharapan/wiki/article/.pages)** (omitting `tutorial.md`), making it strictly accessible via internal link from Beranda (**[`/article/index.md`](file:///home/ubuntu/app/com.jejeharapan/wiki/article/index.md)**).
-  7. Coolify deployment optimization: Fixed container restart loop by adding `listen [::]:80;` in `nginx.conf`, updating healthcheck target to `http://127.0.0.1:80/` via `CMD-SHELL`, removing static `container_name` in `docker-compose-coolify.yaml`, and adding `expose: - "80"` for Traefik reverse proxy routing.
+  7. Coolify deployment optimization: Simplified container stack running direct `mkdocs serve --dev-addr 0.0.0.0:80`, healthcheck target set to `http://127.0.0.1:80/` via `CMD-SHELL`, static `container_name` removed, and `expose: - "80"` for Traefik reverse proxy routing.
 
