@@ -1,5 +1,5 @@
 ---
-title: Login dengan PIN
+title: Login
 # category: Security
 # level: Mandatory
 ---
@@ -14,18 +14,10 @@ title: Login dengan PIN
 
 2. Masukan pin yang sudah di setup, jika ini pertama kali login maka masukan pin 123456
 
+![Verifikasi PIN](){ width="30%" .center }
+
 3. Berhasil masuk
 
+![Halaman Utama](){ width="30%" .center }
+
 ---
-
-<!-- ## Melalui Web
-
-1. Membuka web.jxfleet.com, lalu klik "Login as Driver"
-
-2. Masukan nomor hp yang sudah terdaftar dengan awalan 62, lalu klik login
-
-3. Masukan pin yang sudah di setup, jika ini pertama kali login maka masukan pin 123456
-
-4. Berhasil masuk
-
---- -->
