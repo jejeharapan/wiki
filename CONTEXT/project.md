@@ -76,4 +76,5 @@ All articles must follow a structured, multi-level folder hierarchy:
   4. Multi-stage `Dockerfile` with Nginx web server for production-grade static serving.
   5. Sample documentation created in `/article` adhering strictly to the requested nested structure (`group1/subgroup1/subsubgroup1/...`).
   6. Tutorial documentation created at **[`/article/tutorial.md`](file:///home/ubuntu/app/com.jejeharapan/wiki/article/tutorial.md)** detailing MkDocs writing standards in Bahasa Indonesia with live interactive previews. Hidden from top navigation tabs via explicit navigation listing in **[`/article/.pages`](file:///home/ubuntu/app/com.jejeharapan/wiki/article/.pages)** (omitting `tutorial.md`), making it strictly accessible via internal link from Beranda (**[`/article/index.md`](file:///home/ubuntu/app/com.jejeharapan/wiki/article/index.md)**).
+  7. Coolify deployment optimization: Fixed container restart loop by adding `listen [::]:80;` in `nginx.conf`, updating healthcheck target to `http://127.0.0.1:80/` via `CMD-SHELL`, removing static `container_name` in `docker-compose-coolify.yaml`, and adding `expose: - "80"` for Traefik reverse proxy routing.
 

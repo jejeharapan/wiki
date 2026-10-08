@@ -5,8 +5,8 @@ services:
       dockerfile: Dockerfile
     container_name: corporate-wiki-local
     ports:
-      - ${APP_PORT:+$APP_PORT:}80
+      - ${APP_PORT:-8080}:80
     restart: unless-stopped
     environment:
       - APP_ENV=${APP_ENV:-development}
-      - SITE_NAME=${SITE_NAME:-Corporate Tools Wiki}
+      - SITE_NAME=${SITE_NAME:-Jejeharapan Wiki}
