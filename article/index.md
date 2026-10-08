@@ -21,5 +21,3 @@ Pusat dokumentasi dan panduan langkah-demi-langkah penggunaan sistem dan alat ke
 * [📖 Panduan Penulisan Dokumentasi Wiki](tutorial.md)
 
 ---
-
-> Push every change into `main` branch: [https://github.com/jejeharapan/wiki.git](https://github.com/jejeharapan/wiki.git)
