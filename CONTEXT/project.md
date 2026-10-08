@@ -31,7 +31,9 @@ This project focuses on building an enterprise Wiki / Step-by-Step Guide platfor
 * **Containerization**: Single-stage Docker container running `mkdocs serve --dev-addr=0.0.0.0:80` directly from `squidfunk/mkdocs-material:latest` without Nginx.
 * **Orchestration & Deployment**:
   * Local Development: `docker-compose.yaml`
-  * Coolify Production Deployment: Docker Compose build method using `docker-compose-coolify.yaml` (must strictly end with `-coolify.yaml`)
+  * Coolify Production Deployment:
+    - Docker Compose Build Mode: via `docker-compose-coolify.yaml`
+    - Railpack / Nixpacks Mode: via `Procfile`, `nixpacks.toml`, and `requirements.txt`
 * **Environment Configuration**: Keyed via `.env` file (`.env.example` provided as template)
   * `APP_PORT`: Optional host port setting. When specified (e.g. `APP_PORT=8080`), publishes `${APP_PORT}:80` for direct IP:PORT access. When set to `null`/empty, host port publication is bypassed, restricting access strictly through the specified `SITE_URL` reverse proxy (Traefik / Coolify FQDN).
 
@@ -51,6 +53,8 @@ All articles must follow a structured, multi-level folder hierarchy:
 │       └── coolify_deployment.md
 ├── mkdocs.yml
 ├── Dockerfile
+├── Procfile
+├── nixpacks.toml
 ├── .env
 ├── .env.example
 ├── docker-compose.yaml
@@ -75,5 +79,5 @@ All articles must follow a structured, multi-level folder hierarchy:
   4. Single-stage `Dockerfile` serving MkDocs Material directly on port 80 without Nginx.
   5. Sample documentation created in `/article` adhering strictly to the requested nested structure (`group1/subgroup1/subsubgroup1/...`).
   6. Tutorial documentation created at **[`/article/tutorial.md`](file:///home/ubuntu/app/com.jejeharapan/wiki/article/tutorial.md)** detailing MkDocs writing standards in Bahasa Indonesia with live interactive previews. Hidden from top navigation tabs via explicit navigation listing in **[`/article/.pages`](file:///home/ubuntu/app/com.jejeharapan/wiki/article/.pages)** (omitting `tutorial.md`), making it strictly accessible via internal link from Beranda (**[`/article/index.md`](file:///home/ubuntu/app/com.jejeharapan/wiki/article/index.md)**).
-  7. Coolify deployment optimization: Simplified container stack running direct `mkdocs serve --dev-addr 0.0.0.0:80`, healthcheck target set to `http://127.0.0.1:80/` via `CMD-SHELL`, static `container_name` removed, and `expose: - "80"` for Traefik reverse proxy routing.
+  7. Coolify deployment optimization: Added full support for Nixpacks/Railpack deployment via `Procfile`, `nixpacks.toml`, and complete Python dependencies in `requirements.txt`.
 

@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ['python3']
+
+[phases.install]
+cmds = ['pip install -r requirements.txt']
+
+[start]
+cmd = 'mkdocs serve --dev-addr 0.0.0.0:${PORT:-80}'
