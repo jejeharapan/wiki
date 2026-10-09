@@ -1,5 +1,5 @@
 ---
-title: "Lupa Password & PIN"
+title: "Lupa Password / PIN"
 author: Asyraf Nur Adianto
 last_updated: 2026-10-09 10:35
 ---
