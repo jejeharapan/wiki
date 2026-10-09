@@ -20,7 +20,7 @@ Seluruh berkas dokumentasi berformat Markdown (`.md`) disimpan di dalam direktor
 /article/
 ├── <Nama_Aplikasi_atau_Sistem>/
 │   ├── index.md
-│   ├── <Nama_Modul>/
+│   ├── <Nama_Modul_atau_Fitur_atau_Case>/
 │   │   ├── attachment/
 │   │   │   ├── 001-namaLangkah-001.png
 │   │   │   └── 001-namaLangkah-002.png
