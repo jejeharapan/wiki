@@ -24,8 +24,8 @@ This project focuses on building an enterprise Wiki / Step-by-Step Guide platfor
 * **Brand Color Palette & Theme Overrides**: Implemented via native template override `overrides/main.html` (`custom_dir: overrides` in `mkdocs.yml`).
 * **Frontmatter Metadata UI Rendering**: Automatically renders `author` (`Penulis:`) and `last_updated` (`Terakhir Diperbarui:`) frontmatter keys into a compact metadata badge at the top of article content (`font-size: 11pt`, `padding: 4px 10px`) via `overrides/main.html`.
 * **Image Resizing & Centering Syntax**:
-  * Resizing: Use `![alt text](image.png){ style="height: 200px;" .center }` or `width="30%"`.
-  * Centering: Use `![alt text](image.png){ style="height: 200px;" .center }` (via `.center` utility class in `overrides/main.html`) or inline `{ style="display: block; margin: 0 auto;" }`. HTML `align=center` is invalid in CSS/Markdown and will not center images.
+  * Resizing: Use `![alt text](image.png){ style="height: 250px;" .center }` or `width="30%"`.
+  * Centering: Use `![alt text](image.png){ style="height: 250px;" .center }` (via `.center` utility class in `overrides/main.html`) or inline `{ style="display: block; margin: 0 auto;" }`. HTML `align=center` is invalid in CSS/Markdown and will not center images.
 * **Table of Contents Depth**: Restricted to second-level headings (`##`) across all pages via `markdown_extensions.toc.toc_depth: 2` in `mkdocs.yml`.
 * **Collapsible Groups & Navigation**: In-page Markdown accordions (`pymdownx.details` via `??? note "Title"`) and content mini tabs (`pymdownx.tabbed` via `=== "Tab Title"`). Group section headers (`.md-nav__caption`) are hidden from the sidebar to display a clean documentation link list.
 * **List Numbering Consistency (`sane_lists`)**: The `sane_lists` extension is active in `mkdocs.yml` so ordered lists strictly follow the numbers authored in the `.md` source (`1.`, `2.`, `3.`) and do not reset to 1 when separated by blank lines or screenshots.
