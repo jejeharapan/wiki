@@ -35,3 +35,5 @@ Bagi pengguna perangkat Android, aplikasi **JXFleet Driver** dapat diunduh langs
 
 !!! note "Bantuan Akses & Pendaftaran Akun"
     Untuk pendaftaran nomor akun baru atau kendala akses platform, silakan hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)**.
+
+---

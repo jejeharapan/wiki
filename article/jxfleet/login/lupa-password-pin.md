@@ -70,8 +70,3 @@ Jika Anda sedang bertugas di lapangan dan membutuhkan akses masuk ke aplikasi se
 4. **Selesai**: Sistem akan langsung membawa Anda ke halaman utama aplikasi dan Anda siap melanjutkan penugasan.
 
 ---
-
-## 🔗 Tautan Navigasi
-
-- [📖 Panduan Lengkap Langkah-Langkah Login JXFleet](index.md)
-- [🏠 Kembali ke Beranda Portal Wiki](../../index.md)

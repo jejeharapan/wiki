@@ -45,3 +45,5 @@ Portal Wiki ini dibangun sebagai standar acuan operasional digital terpusat bagi
     Bagi tim atau PIC yang akan menulis, menyusun, atau memperbarui artikel panduan sistem, diwajibkan untuk membaca dan mengikuti acuan standar di **[Panduan Penulisan Dokumentasi Wiki (tutorial.md)](tutorial.md)**.
     
     Panduan tersebut mencakup aturan hierarki direktori, tabel panduan langkah 2-kolom bersisian, penomoran urut otomatis (`sane_lists`), penyisipan gambar, dan penggunaan komponen UI interaktif.
+
+---
