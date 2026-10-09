@@ -24,11 +24,30 @@ Platform ini menghubungkan pengemudi (*driver*), tim operasional lapangan, dan p
 
 ### 📱 Aplikasi Mobile Driver
 
-| | |
-| :---: | :--- |
-| [![Google Play Store](attachment/index/001.png){ style="height: 60px;" }](https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share) | Aplikasi untuk perangkat iOS (Apple App Store) akan segera hadir (*upcoming*). Untuk saat ini, pengguna iOS dapat mengakses layanan JXFleet secara penuh melalui **Mobile Web** di [web.jxfleet.com](https://web.jxfleet.com). |
-| `https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share` | |
-{: .headerless }
+<table style="width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; overflow: hidden; margin: 16px 0;">
+  <tbody>
+    <tr>
+      <td style="width: 42%; vertical-align: middle; padding: 18px 20px; border-bottom: 1px solid var(--md-default-fg-color--lightest); border-right: 1px solid var(--md-default-fg-color--lightest);">
+        <a href="https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share" target="_blank" rel="noopener">
+          <img src="attachment/index/001.png" alt="Google Play Store" style="height: 48px; display: block;">
+        </a>
+      </td>
+      <td style="vertical-align: middle; padding: 18px 20px; border-bottom: 1px solid var(--md-default-fg-color--lightest); line-height: 1.6;">
+        Aplikasi untuk perangkat <strong>iOS (Apple App Store)</strong> akan segera hadir (<em>upcoming</em>).<br>
+        Untuk saat ini, pengguna iOS dapat mengakses layanan JXFleet secara penuh melalui <strong>Mobile Web</strong> di <a href="https://web.jxfleet.com">web.jxfleet.com</a>.
+      </td>
+    </tr>
+    <tr style="background: var(--md-code-bg-color);">
+      <td style="vertical-align: middle; padding: 12px 20px; border-right: 1px solid var(--md-default-fg-color--lightest);">
+        <div style="font-size: 11px; opacity: 0.7; margin-bottom: 4px;">Tautan Unduh Langsung:</div>
+        <code style="display: block; font-size: 11px; word-break: break-all; padding: 6px 10px; border-radius: 4px; user-select: all;">https://play.google.com/store/apps/details?id=com.jejeharapan.fms</code>
+      </td>
+      <td style="vertical-align: middle; padding: 12px 20px; color: var(--md-default-fg-color--light); font-size: 12px; font-style: italic;">
+        *(Tautan App Store segera hadir)*
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
