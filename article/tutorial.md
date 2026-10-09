@@ -80,7 +80,7 @@ last_updated: 2026-10-09
 
 ### B. Memasukkan & Mengatur Ukuran Gambar
 
-Gunakan sintaks persentase/pixel (`width="30%"` atau `style="height: 60px;"`) dan class `.center` agar gambar berada di posisi tengah layar dengan tampilan proporsional dan konsisten.
+Gunakan sintaks persentase/pixel (`width="30%"` atau `style="height: 200px;"`) dan class `.center` agar gambar berada di posisi tengah layar dengan tampilan proporsional dan konsisten.
 
 !!! tip "Indensasi Gambar di Dalam Daftar Berurutan (Numbered List)"
     Agar penomoran daftar berurut (`1.`, `2.`, `3.`, `4.`) tidak terputus atau ter-reset kembali ke `1.` saat menyisipkan gambar di antara langkah, **sejajarkan posisi gambar dengan indah 7 spasi** (atau sesuaikan dengan kolom teks poin tersebut) di bawah nomor langkahnya:
@@ -90,20 +90,20 @@ Gunakan sintaks persentase/pixel (`width="30%"` atau `style="height: 60px;"`) da
 
         1. Langkah pertama penjelasannya.
 
-           ![Gambar Langkah 1](attachment/001-login-001.png){ style="height: 60px;" .center }
+           ![Gambar Langkah 1](attachment/001-login-001.png){ style="height: 200px;" .center }
 
         2. Langkah kedua penjelasannya.
 
-           ![Gambar Langkah 2](attachment/001-login-002.png){ style="height: 60px;" .center }
+           ![Gambar Langkah 2](attachment/001-login-002.png){ style="height: 200px;" .center }
     ```
 
 #### Sintaks Kode:
 ```markdown
-![Halaman Login](attachment/001-login-001.png){ style="height: 60px;" .center }
+![Halaman Login](attachment/001-login-001.png){ style="height: 200px;" .center }
 ```
 
 #### Hasil Tampilan (Preview):
-![Halaman Login](JXFleet/Login/attachment/001-login-001.png){ style="height: 60px;" .center }
+![Halaman Login](JXFleet/Login/attachment/001-login-001.png){ style="height: 200px;" .center }
 
 ---
 
