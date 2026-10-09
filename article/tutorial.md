@@ -105,7 +105,7 @@ Gunakan sintaks persentase/pixel (`width="30%"` atau `style="height: 250px;"`) d
 ```
 
 #### Hasil Tampilan (Preview):
-![Halaman Login](jxfleet/login/attachment/001-login/001.png){ style="height: 250px;" .center }
+![Halaman Login](jxfleet/login/attachment/login/001.png){ style="height: 250px;" .center }
 
 !!! info "Fitur Perbesar Gambar Otomatis (Lightbox Modal)"
     Seluruh gambar dokumentasi secara otomatis dapat diklik untuk menampilkan pop-up modal yang memperbesar gambar secara penuh dengan latar belakang redup (*blur backdrop*). Modal dapat ditutup dengan mengklik tombol **✕**, mengklik di luar area gambar, atau menekan tombol **Escape**.
@@ -249,8 +249,8 @@ Untuk membuat panduan alur yang sangat rapi dan ringkas, Anda dapat menyandingka
 ```markdown
 | Langkah & Instruksi | Tampilan Layar |
 | :--- | :---: |
-| **1.** Akses halaman utama sistem di browser. | ![Langkah 1](attachment/001-login/001.png){ style="height: 250px;" } |
-| **2.** Masukkan email dan kata sandi Anda. | ![Langkah 2](attachment/001-login/002.png){ style="height: 250px;" } |
+| **1.** Akses halaman utama sistem di browser. | ![Langkah 1](attachment/login/001.png){ style="height: 250px;" } |
+| **2.** Masukkan email dan kata sandi Anda. | ![Langkah 2](attachment/login/002.png){ style="height: 250px;" } |
 ```
 
 ---
