@@ -1,3 +1,5 @@
 nav:
   - index.md
   - tutorial.md
+  - "jxfleet": "JXFleet"
+  - "tms": "TMS"
