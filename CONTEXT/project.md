@@ -67,14 +67,20 @@ All articles must follow a structured, multi-level folder hierarchy:
     ├── .pages
     ├── index.md
     ├── tutorial.md
-    ├── JXFleet/
+    ├── jxfleet/
     │   ├── .pages
     │   ├── index.md
-    │   └── Login/
+    │   └── login/
     │       ├── .pages
-    │       ├── 001-login.md
-    │       ├── 002-passwordLupa.md
-    │       └── 003-pinLupa.md
+    │       ├── attachment/
+    │       └── login.md
+    └── tms/
+        ├── .pages
+        ├── index.md
+        └── truck-utilization/
+            ├── .pages
+            ├── draft.md
+            └── work-order-create.md
 ```
 
 ---
