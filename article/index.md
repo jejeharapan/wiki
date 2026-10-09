@@ -26,8 +26,17 @@ Portal Wiki ini dibangun sebagai standar acuan operasional digital terpusat bagi
 | Nama Sistem / Alat Kerja | Deskripsi Singkat Fungsi | Target Pengguna | Status Sistem | Dokumentasi Utama |
 | :--- | :--- | :--- | :--- | :--- |
 | **JXFleet** | Platform manajemen armada, autentikasi driver, pelacakan kendaraan, dan kontrol operasional jalan. | Tim Ops, Admin & Driver | 🚀 Production | [📖 Dokumentasi JXFleet](JXFleet/index.md) |
-| **TMS (Transportation Management System)** | Sistem pengelolaan order pengiriman, alokasi jadwal armada, pengolahan manifes jalan, dan POD. | Tim Logistik & Dispatcher | ⏳ Dalam Pengembangan | *Coming Soon* |
-| **FATTrack (Finance & Asset Tracking)** | Sistem pencatatan klaim biaya operasional, voucher BBM, perawatan armada, dan klaim driver. | Tim Keuangan & Maintenance | ⏳ Dalam Pengembangan | *Coming Soon* |
+
+
+## 💡 Panduan Penggunaan Portal Wiki
+
+???+ note "Navigasi Tingkat Lanjut & Fitur Pencarian"
+    - **Fitur Pencarian (Search)**: Gunakan kolom pencarian di bagian atas (*Header Bar*) untuk menemukan kata kunci artikel, parameter sistem, atau istilah teknis secara cepat.
+    - **Tampilan Mini Tabs**: Pada beberapa artikel panduan multi-platform, gunakan **Mini Tabs** (`Komputer`, `Mobile App`, `Mobile Web`) untuk beralih tampilan instruksi sesuai perangkat yang Anda gunakan.
+    - **Table of Contents (TOC)**: Menu di sisi kanan halaman secara otomatis memuat daftar isi sub-judul (H2) untuk memudahkan navigasi langsung ke topik yang Anda tuju.
+
+??? tip "Mode Tampilan Gelap / Terang (Dark / Light Mode)"
+    Anda dapat mengubah tema warna portal dari terang ke gelap atau sebaliknya dengan mengklik ikon matahari/bulan di sudut kanan atas header.
 
 ---
 
