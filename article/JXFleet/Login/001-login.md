@@ -1,5 +1,5 @@
 ---
-title: "[UPCOMING] Login"
+title: "Login"
 author: Asyraf Nur Adianto
 last_updated: 2026-10-09 08:47
 ---
