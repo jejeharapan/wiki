@@ -1,5 +1,5 @@
 ---
-title: "Generate One-Time Login Token"
+title: "Generate One-Time Login Token untuk Driver"
 author: Asyraf Nur Adianto
 last_updated: 2026-10-09 11:08
 ---
@@ -86,7 +86,7 @@ Setelah data driver yang dituju ditemukan:
 
 !!! tip "Rekomendasi Operasional"
     - **Verifikasi Identitas**: Selalu pastikan identitas pengemudi dan nomor polisi kendaraan penugasan sebelum menerbitkan token untuk mencegah penyalahgunaan akses armada.
-    - **Sesi Darurat Sementara**: Jika driver memerlukan solusi permanen untuk login sehari-hari berikutnya karena lupa PIN, arahkan tim untuk melakukan prosedur penyetelan ulang PIN melalui panduan [Reset PIN Driver](reset-pin-driver.md).
+    - **Sesi Darurat Sementara**: Jika driver memerlukan solusi permanen untuk login sehari-hari berikutnya karena lupa PIN, arahkan tim untuk melakukan prosedur penyetelan ulang PIN melalui panduan [Reset PIN Driver](driver-reset-pin.md).
     - **Dokumentasi Terkait**: Pelajari juga ringkasan alur pemulihan kata sandi pengguna platform pada panduan [Lupa Password & PIN JXFleet](../login/lupa-password-pin.md).
 
 ---

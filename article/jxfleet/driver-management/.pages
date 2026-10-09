@@ -1,5 +1,6 @@
 title: Divisi Driver Management
 nav:
   - index.md
-  - reset-pin-driver.md
-  - generate-one-time-login-token.md
+  - driver-reset-pin.md
+  - driver-generate-token-login.md
+  - driver-deactivate-account.md
