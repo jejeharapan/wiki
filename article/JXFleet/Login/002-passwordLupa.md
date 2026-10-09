@@ -1,7 +1,7 @@
 ---
-title: Lupa Password
-author: Tim Pengembang Sistem
-last_updated: 2026-10-09
+title: "[UPCOMING] Lupa Password"
+author: Asyraf Nur Adianto
+last_updated: 2026-10-09 07:07
 ---
 
 # Lupa Password
