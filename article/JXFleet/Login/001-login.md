@@ -60,7 +60,7 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
     | :--- | :---: |
     | **1.** Buka browser di ponsel (Chrome/Safari), lalu akses `web.jxfleet.com`. Pilih menu **Login as Driver**. | ![Tampilan Awal Mobile Web](attachment/001-login/010.png){ style="height: 250px;" } |
     | **2.** Masukkan nomor HP yang telah terdaftar pada Tim Pengembang JXFleet (diawali `62`), lalu tekan tombol **Lanjut**. | ![Form Input Nomor HP Mobile Web](attachment/001-login/011.png){ style="height: 250px;" } |
-    | **3.** Masukkan PIN 6-digit akun Anda. | ![Input PIN Mobile Web](attachment/001-login/012.png){ style="height: 250px;" } |
+    | **3.** Masukkan PIN 6-digit akun Anda, lalu tekan **Login** | ![Input PIN Mobile Web](attachment/001-login/012.png){ style="height: 250px;" } |
     | **4.** Berhasil masuk ke halaman dashboard Mobile Web. | ![Dashboard Mobile Web](attachment/001-login/013.png){ style="height: 250px;" } |
 
     ---
