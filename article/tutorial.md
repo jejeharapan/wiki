@@ -82,8 +82,10 @@ last_updated: 2026-10-09
 
 Gunakan sintaks persentase/pixel (`width="30%"` atau `style="height: 200px;"`) dan class `.center` agar gambar berada di posisi tengah layar dengan tampilan proporsional dan konsisten.
 
-!!! tip "Indensasi Gambar di Dalam Daftar Berurutan (Numbered List)"
-    Agar penomoran daftar berurut (`1.`, `2.`, `3.`, `4.`) tidak terputus atau ter-reset kembali ke `1.` saat menyisipkan gambar di antara langkah, **sejajarkan posisi gambar dengan indah 7 spasi** (atau sesuaikan dengan kolom teks poin tersebut) di bawah nomor langkahnya:
+!!! tip "Indensasi Gambar & Penomoran List Berurutan (sane_lists)"
+    Sistem wiki menggunakan ekstensi **`sane_lists`** yang memastikan urutan angka pada daftar berurutan (`1.`, `2.`, `3.`, `4.`) **selalu mematuhi angka yang diinput di file `.md`** dan tidak pernah ter-reset kembali ke `1.` secara sembarangan.
+    
+    Agar tampilan tersusun rapi saat menyisipkan gambar di antara langkah, **sejajarkan posisi gambar dengan indah 7 spasi** (di bawah kolom teks poin langkah):
 
     ```markdown
     === "Tab Title"
