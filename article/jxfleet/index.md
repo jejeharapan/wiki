@@ -29,7 +29,7 @@ Platform ini menghubungkan pengemudi (*driver*), tim operasional lapangan, dan p
     <tr>
       <td style="width: 42%; vertical-align: middle; padding: 18px 20px; border-bottom: 1px solid var(--md-default-fg-color--lightest); border-right: 1px solid var(--md-default-fg-color--lightest);">
         <a href="https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share" target="_blank" rel="noopener">
-          <img src="attachment/index/001.png" alt="Google Play Store" style="height: 48px; display: block;">
+          <img src="attachment/index/001.png" alt="Google Play Store" style="height: 100px; display: block;">
         </a>
       </td>
       <td style="vertical-align: middle; padding: 18px 20px; border-bottom: 1px solid var(--md-default-fg-color--lightest); line-height: 1.6;">
