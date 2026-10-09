@@ -10,8 +10,10 @@ Pusat informasi resmi, dokumentasi teknis, dan panduan operasional langkah-demi-
 
 ---
 
-!!! tip "Panduan Kontributor Dokumentasi"
-    Ingin menyusun atau memperbarui artikel panduan sistem baru? Pelajari standar tata letak, komponen UI interaktif, dan format gambar pada [📖 Panduan Penulisan Dokumentasi Wiki (MkDocs)](tutorial.md).
+!!! info "📖 Panduan untuk Penulis & Kontributor Dokumentasi"
+    Bagi tim atau PIC yang akan menulis, menyusun, atau memperbarui artikel panduan sistem, diwajibkan untuk membaca dan mengikuti acuan standar di **[Panduan Penulisan Dokumentasi Wiki (tutorial.md)](tutorial.md)**.
+    
+    Panduan tersebut mencakup aturan hierarki direktori, tabel panduan langkah 2-kolom bersisian, penomoran urut otomatis (`sane_lists`), penyisipan gambar, dan penggunaan komponen UI interaktif.
 
 ---
 
@@ -25,7 +27,8 @@ Portal Wiki ini dibangun sebagai standar acuan operasional digital terpusat bagi
 
 | Nama Sistem / Alat Kerja | Deskripsi Singkat Fungsi | Target Pengguna | Status Sistem | Dokumentasi Utama |
 | :--- | :--- | :--- | :--- | :--- |
-| **JXFleet** | Platform manajemen armada, autentikasi driver, pelacakan kendaraan, dan kontrol operasional jalan. | Tim Ops, Admin & Driver | 🚀 Production | [📖 Dokumentasi JXFleet](JXFleet/index.md) |
+| **JXFleet** | Platform manajemen armada, autentikasi driver, pelacakan kendaraan, dan kontrol operasional jalan. | Tim Ops, Admin & Driver | 🚀 Production | [📖 Dokumentasi JXFleet](jxfleet/index.md) |
+| **TMS** | Platform Transportation Management System untuk manajemen pesanan, utilitas truk, dan work order maintenance. | Tim Ops, Mekanik & Admin | 🚧 Development | [📖 Dokumentasi TMS](tms/index.md) |
 
 
 ## 💡 Panduan Penggunaan Portal Wiki

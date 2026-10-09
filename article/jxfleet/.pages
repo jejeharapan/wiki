@@ -1,5 +1,5 @@
 title: JXFleet
 nav:
   - index.md
-  - "login": "Login"
+  - "Login": "login"
   - ...
