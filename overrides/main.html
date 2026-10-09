@@ -49,6 +49,11 @@
         vertical-align: middle !important;
     }
 
+    /* Headerless Tables Support */
+    .md-typeset table.headerless thead {
+        display: none !important;
+    }
+
     /* Page Metadata Badge Styling - Compact 11pt */
     .doc-metadata {
         display: flex;
@@ -255,10 +260,23 @@
       });
     }
 
+    function initHeaderlessTables() {
+      document.querySelectorAll('.md-typeset table thead').forEach(function(thead) {
+        var ths = thead.querySelectorAll('th');
+        if (ths.length > 0 && Array.from(ths).every(function(th) { return th.textContent.trim() === ''; })) {
+          thead.style.display = 'none';
+        }
+      });
+    }
+
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initImageModal);
+      document.addEventListener('DOMContentLoaded', function() {
+        initImageModal();
+        initHeaderlessTables();
+      });
     } else {
       initImageModal();
+      initHeaderlessTables();
     }
   })();
 </script>

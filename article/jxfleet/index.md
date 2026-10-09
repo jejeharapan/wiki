@@ -22,14 +22,13 @@ Platform ini menghubungkan pengemudi (*driver*), tim operasional lapangan, dan p
 
 ---
 
-### 📱 Aplikasi Mobile Driver (Android)
+### 📱 Aplikasi Mobile Driver
 
-Bagi pengguna perangkat Android, aplikasi **JXFleet Driver** dapat diunduh langsung melalui Google Play Store:
-
-[![https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share](attachment/index/001.png){ style="height: 100px; align: center;" }](https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share) 
-
-!!! info "Informasi Pengguna iOS (iPhone / iPad)"
-    Untuk saat ini, pengguna perangkat iOS dapat mengakses platform JXFleet secara penuh melalui versi **Mobile Web** pada peramban ponsel (*Safari / Chrome*) dengan mengunjungi [web.jxfleet.com](https://web.jxfleet.com).
+| | |
+| :---: | :--- |
+| [![Google Play Store](attachment/index/001.png){ style="height: 60px;" }](https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share) | Aplikasi untuk perangkat iOS (Apple App Store) akan segera hadir (*upcoming*). Untuk saat ini, pengguna iOS dapat mengakses layanan JXFleet secara penuh melalui **Mobile Web** di [web.jxfleet.com](https://web.jxfleet.com). |
+| `https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share` | |
+{: .headerless }
 
 ---
 
