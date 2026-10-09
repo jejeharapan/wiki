@@ -8,39 +8,42 @@ hide:
 
 # Panduan Penulisan Dokumentasi Wiki (MkDocs)
 
-Selamat datang di panduan resmi penulisan artikel dan dokumentasi sistem untuk **PT Jeje Harapan Transindo (Jeje Trans)**. Panduan ini dilengkapi dengan contoh sintaks kode beserta **Hasil Tampilan (Live Preview)** langsung yang dapat Anda lihat hasilnya di halaman ini.
+Selamat datang di panduan resmi penulisan artikel dan dokumentasi sistem untuk **PT Jeje Harapan Transindo (Jeje Trans)**. Panduan ini dilengkapi dengan aturan struktur direktori terbaru, standar tata letak gambar, serta contoh sintaks kode beserta **Hasil Tampilan (Live Preview)** langsung yang dapat Anda lihat di halaman ini.
 
 ---
 
 ## 📁 1. Struktur Folder & Hirarki File
 
-Seluruh berkas dokumentasi berformat Markdown (`.md`) disimpan di dalam direktori `/article` dengan hirarki bertingkat hingga 3 subfolder:
+Seluruh berkas dokumentasi berformat Markdown (`.md`) disimpan di dalam direktori `/article` dengan hirarki bertingkat:
 
 ```
 /article/
-├── <Nama_Aplikasi_atau_Grup>/
-│   ├── <Kategori_Layanan>/
-│   │   ├── <Fitur_atau_Subkategori>/
-│   │   │   ├── 001-namaLangkah1.md
-│   │   │   ├── 001-namaLangkah1-001.png
-│   │   │   └── 002-namaLangkah2.md
+├── <Nama_Aplikasi_atau_Sistem>/
+│   ├── index.md
+│   ├── <Nama_Modul>/
+│   │   ├── attachment/
+│   │   │   ├── 001-namaLangkah-001.png
+│   │   │   └── 001-namaLangkah-002.png
+│   │   ├── 001-namaLangkah.md
+│   │   └── 002-namaLangkahBerikutnya.md
 ```
 
-### Aturan Penamaan:
-1. Gunakan nama folder yang ringkas dan jelas (contoh: `JXFleet`, `TMS`, `FATTrack`).
-2. Simpan gambar pendukung di dalam folder yang sama dengan file `.md` tempat gambar tersebut digunakan.
-3. Gunakan penamaan file berurut jika berupa panduan sekuensial (contoh: `001-driverLoginPIN.md`, `002-driverLoginToken.md`).
+### Aturan Penamaan & Pengorganisasian:
+1. **Nama Folder Utama**: Gunakan nama sistem/modul yang ringkas dan konsisten (contoh: `JXFleet`, `TMS`, `FATTrack`).
+2. **Subfolder Gambar (`attachment/`)**: Simpan seluruh gambar screenshot di dalam subfolder `attachment/` pada lokasi modul terkait.
+3. **Pemanggilan Gambar**: Gunakan path relatif `attachment/nama-gambar.png` di dalam file `.md`.
+4. **Penulisan Berkas Berurut**: Gunakan awalan angka berurut untuk panduan sekuensial (contoh: `001-login.md`, `002-passwordLupa.md`, `003-pinLupa.md`).
 
 ---
 
 ## 📝 2. Metadata Artikel (YAML Frontmatter)
 
-Setiap file `.md` wajib diawali dengan blok metadata YAML di baris paling atas:
+Setiap file `.md` wajib diawali dengan blok metadata YAML di baris paling atas untuk menampilkan badge informasi penulis dan tanggal pembaruan:
 
 ### Sintaks Kode:
 ```yaml
 ---
-title: Panduan Penulisan Dokumentasi Wiki
+title: Login Sistem JXFleet
 author: Tim Pengembang Sistem
 last_updated: 2026-10-09
 ---
@@ -56,6 +59,9 @@ last_updated: 2026-10-09
 ---
 
 ### A. Judul & Sub-Judul (Headings)
+
+> [!NOTE]
+> Daftar Isi (Table of Contents / TOC) di sisi kanan secara otomatis dibatasi hingga tingkat `##` (Level 2 Heading). Sub-judul tingkat 3 (`###`) dan 4 (`####`) tetap dapat ditulis untuk pengelompokan isi artikel.
 
 #### Sintaks Kode:
 ```markdown
@@ -74,15 +80,15 @@ last_updated: 2026-10-09
 
 ### B. Memasukkan & Mengatur Ukuran Gambar
 
-#### 1. Gambar Rata Tengah (Center) & Ukuran Persentase (Rekomendasi)
+Gunakan sintaks persentase ukuran dan class `.center` agar gambar berada di posisi tengah layar dengan tampilan proporsional.
 
-##### Sintaks Kode:
+#### Sintaks Kode:
 ```markdown
-![Layar Login](001-driverLoginPIN-001.png){ width="30%" .center }
+![Halaman Login](attachment/001-login-001.png){ width="30%" .center }
 ```
 
-##### Hasil Tampilan (Preview):
-![Layar Login](JXFleet/Mobile App/Login/001-driverLoginPIN-001.png){ width="30%" .center }
+#### Hasil Tampilan (Preview):
+![Halaman Login](JXFleet/Login/attachment/001-login-001.png){ width="30%" .center }
 
 ---
 
@@ -119,33 +125,89 @@ last_updated: 2026-10-09
 
 ---
 
-### D. Penulisan Kode & Perintah Terminal
+### D. Konten Mini Tab Antar Platform (Content Mini Tabs)
+
+Gunakan sintaks `=== "Tab Title"` untuk membuat tab kecil interaktif dalam satu dokumen (contoh: memisahkan langkah untuk Komputer, Mobile App, dan Mobile Web).
+
+#### Sintaks Kode:
+```markdown
+=== "💻 Komputer"
+    1. Buka aplikasi di komputer atau browser desktop.
+    2. Masukkan nomor HP dan PIN terdaftar.
+
+=== "📱 Mobile App"
+    1. Buka aplikasi **JXFleet Driver**.
+    2. Masukkan nomor HP diawali `62` dan PIN 6-digit.
+
+=== "🌐 Mobile Web"
+    1. Buka situs `web.jxfleet.com`.
+    2. Klik **Login as Driver** lalu masukkan nomor HP dan PIN.
+```
+
+#### Hasil Tampilan (Preview):
+
+=== "💻 Komputer"
+    1. Buka aplikasi di komputer atau browser desktop.
+    2. Masukkan nomor HP dan PIN terdaftar.
+
+=== "📱 Mobile App"
+    1. Buka aplikasi **JXFleet Driver**.
+    2. Masukkan nomor HP diawali `62` dan PIN 6-digit.
+
+=== "🌐 Mobile Web"
+    1. Buka situs `web.jxfleet.com`.
+    2. Klik **Login as Driver** lalu masukkan nomor HP dan PIN.
+
+---
+
+### E. Blok Konten Buka-Tutup (Expand / Collapse Accordion)
+
+#### Sintaks Kode:
+```markdown
+??? note "Klik untuk membuka / menutup rincian instruksi"
+    Ini adalah rincian instruksi tambahan yang dapat dibuka atau ditutup pengguna.
+
+???+ tip "Grup terbuka secara bawaan (Expand by Default)"
+    Grup ini terbuka secara bawaan saat halaman dimuat, namun tetap dapat ditutup pengguna.
+```
+
+#### Hasil Tampilan (Preview):
+
+??? note "Klik untuk membuka / menutup rincian instruksi"
+    Ini adalah rincian instruksi tambahan yang dapat dibuka atau ditutup pengguna.
+
+???+ tip "Grup terbuka secara bawaan (Expand by Default)"
+    Grup ini terbuka secara bawaan saat halaman dimuat, namun tetap dapat ditutup pengguna.
+
+---
+
+### F. Penulisan Kode & Perintah Terminal
 
 #### Sintaks Kode:
 ````markdown
 ```bash
-# Perintah mengecek status kontainer Docker
-sudo docker compose up --build -d
+# Mengecek status layanan kontainer
+docker compose ps
 ```
 ````
 
 #### Hasil Tampilan (Preview):
 
 ```bash
-# Perintah mengecek status kontainer Docker
-sudo docker compose up --build -d
+# Mengecek status layanan kontainer
+docker compose ps
 ```
 
 ---
 
-### E. Tabel Data
+### G. Tabel Data
 
 #### Sintaks Kode:
 ```markdown
 | Parameter | Tipe Data | Keterangan |
 | :--- | :--- | :--- |
 | `phone_number` | String | Nomor HP terdaftar diawali `62` |
-| `pin` | Number | 6 digit PIN akun driver |
+| `pin` | Number | 6-digit PIN akun driver |
 | `status` | Enum | Active / Suspended |
 ```
 
@@ -154,70 +216,20 @@ sudo docker compose up --build -d
 | Parameter | Tipe Data | Keterangan |
 | :--- | :--- | :--- |
 | `phone_number` | String | Nomor HP terdaftar diawali `62` |
-| `pin` | Number | 6 digit PIN akun driver |
+| `pin` | Number | 6-digit PIN akun driver |
 | `status` | Enum | Active / Suspended |
-
----
-
-### F. Konten Bertingkat (Tabbed Content)
-
-#### Sintaks Kode:
-```markdown
-=== "Mobile App (Android / iOS)"
-    1. Buka aplikasi **JXFleet Driver**.
-    2. Masukkan nomor HP dengan format `628xxxxxxxx`.
-    3. Masukkan PIN 6-digit.
-
-=== "Portal Website"
-    1. Buka situs `web.jxfleet.com`.
-    2. Klik tombol **Login as Driver**.
-    3. Masukkan nomor HP dan PIN terdaftar.
-```
-
-#### Hasil Tampilan (Preview):
-
-=== "Mobile App (Android / iOS)"
-    1. Buka aplikasi **JXFleet Driver**.
-    2. Masukkan nomor HP dengan format `628xxxxxxxx`.
-    3. Masukkan PIN 6-digit.
-
-=== "Portal Website"
-    1. Buka situs `web.jxfleet.com`.
-    2. Klik tombol **Login as Driver**.
-    3. Masukkan nomor HP dan PIN terdaftar.
-
----
-
-### G. Blok Konten Buka-Tutup (Expand / Collapse Accordion)
-
-#### Sintaks Kode:
-```markdown
-??? note "Klik untuk membuka / menutup grup detail"
-    Ini adalah isi grup konten yang dapat di-expand (dibuka) atau di-collapse (ditutup) oleh pengguna.
-
-???+ tip "Grup terbuka secara bawaan (Expand by Default)"
-    Grup ini secara bawaan terbuka saat halaman dimuat, namun tetap dapat ditutup oleh pengguna.
-```
-
-#### Hasil Tampilan (Preview):
-
-??? note "Klik untuk membuka / menutup grup detail"
-    Ini adalah isi grup konten yang dapat di-expand (dibuka) atau di-collapse (ditutup) oleh pengguna.
-
-???+ tip "Grup terbuka secara bawaan (Expand by Default)"
-    Grup ini secara bawaan terbuka saat halaman dimuat, namun tetap dapat ditutup oleh pengguna.
 
 ---
 
 ## 🚀 4. Alur Kerja Kontribusi (Git Workflow)
 
-1. Buat artikel baru di folder terkait di bawah `/article/`.
-2. Simpan gambar screenshot di folder yang sama dengan file `.md`.
-3. Verifikasi penulisan dan sertakan preview komponen.
+1. Buat atau perbarui file `.md` di folder modul terkait di bawah `/article/`.
+2. Simpan seluruh file gambar screenshot pendukung di dalam folder `attachment/`.
+3. Verifikasi penulisan dan pastikan metadata frontmatter terisi.
 4. Commit dan push perubahan ke branch `main`:
 
 ```bash
 git add .
-git commit -m "docs: tambah artikel panduan operasional baru"
+git commit -m "docs: perbarui panduan operasional modul"
 git push origin main
 ```
