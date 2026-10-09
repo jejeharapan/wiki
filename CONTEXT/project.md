@@ -62,11 +62,17 @@ All articles must follow a structured, multi-level folder hierarchy:
 ├── docker-compose-coolify.yaml
 ├── requirements.txt
 └── article/
+    ├── .pages
     ├── index.md
     ├── tutorial.md
     ├── JXFleet/
-    ├── TMS/
-    └── FATTrack/
+    │   ├── .pages
+    │   ├── index.md
+    │   └── Login/
+    │       ├── .pages
+    │       ├── 001-login.md
+    │       ├── 002-passwordLupa.md
+    │       └── 003-pinLupa.md
 ```
 
 ---
