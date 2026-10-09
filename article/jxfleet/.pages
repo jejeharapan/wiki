@@ -2,4 +2,5 @@ title: JXFleet
 nav:
   - index.md
   - "Login": "login"
-  - "Divisi Driver Management": "driver-management"
+  - "Tim Driver Management": "driver-manager"
+  - "Tim Transport Control / Planner": "shipment-manager"
