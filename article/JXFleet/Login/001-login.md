@@ -24,15 +24,15 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
 
     1. Buka peramban (*browser*) di komputer Anda dan akses halaman [web.jxfleet.com](https://web.jxfleet.com).
 
-       ![Halaman Utama Web JXFleet](attachment/001-login-001.png){ width="60%" .center }
+       ![Halaman Utama Web JXFleet](attachment/001-login-001.png){ height="180px" .center }
 
     2. Masukkan nomor handphone yang telah terdaftar pada Tim Pengembang JXFleet (diawali kode negara `62`), masukkan **Password** akun Anda, lalu klik tombol **Login**.
 
-       ![Input Email dan Password](attachment/001-login-002.png){ width="40%" .center }
+       ![Input Email dan Password](attachment/001-login-002.png){ height="180px" .center }
 
     3. Setelah verifikasi berhasil, Anda akan diarahkan langsung ke **Dashboard Utama JXFleet**.
 
-       ![Tampilan Pertama Web Desktop](attachment/001-login-003.png){ width="60%" .center }
+       ![Tampilan Pertama Web Desktop](attachment/001-login-003.png){ height="180px" .center }
 
 === "📱 Mobile App (Android / iOS)"
 
@@ -40,15 +40,15 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
 
     1. Buka aplikasi **JXFleet Driver** di ponsel Anda. Masukkan nomor HP yang telah terdaftar pada Tim Pengembang JXFleet (contoh: `628123456789`), lalu tekan tombol **Login**.
 
-       ![Halaman Login Mobile App](attachment/001-login-004.png){ width="30%" .center }
+       ![Halaman Login Mobile App](attachment/001-login-004.png){ height="180px" .center }
 
     2. Masukkan 6-digit PIN akun Anda. Jika ini pertama kali login, gunakan PIN bawaan `123456`.
 
-       ![Verifikasi PIN Mobile App](attachment/001-login-005.png){ width="30%" .center }
+       ![Verifikasi PIN Mobile App](attachment/001-login-005.png){ height="180px" .center }
 
     3. Setelah verifikasi sukses, Anda akan masuk ke halaman utama aplikasi dan siap menerima penugasan.
 
-       ![Halaman Utama Mobile App](attachment/001-login-006.png){ width="30%" .center }
+       ![Halaman Utama Mobile App](attachment/001-login-006.png){ height="180px" .center }
 
     ---
 
@@ -61,15 +61,15 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
 
     2. Pada halaman awal aplikasi **JXFleet Driver**, tekan tombol **Login Cara Lainnya**.
 
-       ![Pilih Login Cara Lainnya Mobile App](attachment/001-login-007.png){ width="30%" .center }
+       ![Pilih Login Cara Lainnya Mobile App](attachment/001-login-007.png){ height="180px" .center }
 
     3. Tempel (*paste*) atau masukkan 8-digit One-Time Token yang Anda dapatkan.
 
-       ![Input Token Mobile App](attachment/001-login-008.png){ width="30%" .center }
+       ![Input Token Mobile App](attachment/001-login-008.png){ height="180px" .center }
 
     4. Berhasil masuk ke halaman utama aplikasi.
 
-       ![Halaman Utama Mobile App via Token](attachment/001-login-009.png){ width="30%" .center }
+       ![Halaman Utama Mobile App via Token](attachment/001-login-009.png){ height="180px" .center }
 
 === "🌐 Mobile Web"
 
@@ -77,19 +77,19 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
 
     1. Buka browser di ponsel (Chrome/Safari), lalu akses `web.jxfleet.com`. Pilih menu **Login as Driver**.
 
-       ![Tampilan Awal Mobile Web](attachment/001-login-010.png){ width="30%" .center }
+       ![Tampilan Awal Mobile Web](attachment/001-login-010.png){ height="180px" .center }
 
     2. Masukkan nomor HP yang telah terdaftar pada Tim Pengembang JXFleet (diawali `62`), lalu tekan tombol **Lanjut**.
 
-       ![Form Input Nomor HP Mobile Web](attachment/001-login-011.png){ width="30%" .center }
+       ![Form Input Nomor HP Mobile Web](attachment/001-login-011.png){ height="180px" .center }
 
     3. Masukkan PIN 6-digit akun Anda.
 
-       ![Input PIN Mobile Web](attachment/001-login-012.png){ width="30%" .center }
+       ![Input PIN Mobile Web](attachment/001-login-012.png){ height="180px" .center }
 
     4. Berhasil masuk ke halaman dashboard Mobile Web.
 
-       ![Dashboard Mobile Web](attachment/001-login-013.png){ width="30%" .center }
+       ![Dashboard Mobile Web](attachment/001-login-013.png){ height="180px" .center }
 
     ---
 
@@ -102,15 +102,15 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
 
     2. Akses `web.jxfleet.com` ➔ Pilih **Login as Driver** ➔ Tekan opsi **Login Cara Lainnya**.
 
-       ![Pilih Login Cara Lainnya Mobile Web](attachment/001-login-014.png){ width="30%" .center }
+       ![Pilih Login Cara Lainnya Mobile Web](attachment/001-login-014.png){ height="180px" .center }
 
     3. Tempel (*paste*) atau masukkan 8-digit One-Time Token.
 
-       ![Input Token Mobile Web](attachment/001-login-015.png){ width="30%" .center }
+       ![Input Token Mobile Web](attachment/001-login-015.png){ height="180px" .center }
 
     4. Berhasil masuk ke halaman dashboard Mobile Web.
 
-       ![Dashboard Mobile Web via Token](attachment/001-login-016.png){ width="30%" .center }
+       ![Dashboard Mobile Web via Token](attachment/001-login-016.png){ height="180px" .center }
 
 ---
 
