@@ -27,9 +27,9 @@ Platform ini menghubungkan pengemudi (*driver*), tim operasional lapangan, dan p
 <table style="width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; overflow: hidden; margin: 16px 0;">
   <tbody>
     <tr>
-      <td style="width: 42%; vertical-align: middle; padding: 18px 20px; border-bottom: 1px solid var(--md-default-fg-color--lightest); border-right: 1px solid var(--md-default-fg-color--lightest);">
-        <a href="https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share" target="_blank" rel="noopener">
-          <img src="attachment/index/001.png" alt="Google Play Store" style="height: 100px; display: block;">
+      <td style="width: 42%; text-align: center; vertical-align: middle; padding: 18px 20px; border-bottom: 1px solid var(--md-default-fg-color--lightest); border-right: 1px solid var(--md-default-fg-color--lightest);">
+        <a href="https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share" target="_blank" rel="noopener" style="display: inline-block;">
+          <img src="attachment/index/001.png" alt="Google Play Store" style="height: 100px; margin: 0 auto; display: block;">
         </a>
       </td>
       <td style="vertical-align: middle; padding: 18px 20px; border-bottom: 1px solid var(--md-default-fg-color--lightest); line-height: 1.6;">
