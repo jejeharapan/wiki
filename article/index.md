@@ -10,13 +10,6 @@ Pusat informasi resmi, dokumentasi teknis, dan panduan operasional langkah-demi-
 
 ---
 
-!!! info "📖 Panduan untuk Penulis & Kontributor Dokumentasi"
-    Bagi tim atau PIC yang akan menulis, menyusun, atau memperbarui artikel panduan sistem, diwajibkan untuk membaca dan mengikuti acuan standar di **[Panduan Penulisan Dokumentasi Wiki (tutorial.md)](tutorial.md)**.
-    
-    Panduan tersebut mencakup aturan hierarki direktori, tabel panduan langkah 2-kolom bersisian, penomoran urut otomatis (`sane_lists`), penyisipan gambar, dan penggunaan komponen UI interaktif.
-
----
-
 ## 🏛️ Tentang Portal Wiki Jeje Trans
 
 Portal Wiki ini dibangun sebagai standar acuan operasional digital terpusat bagi seluruh karyawan dan pemangku kepentingan di lingkungan **PT Jeje Harapan Transindo**. Melalui portal ini, seluruh panduan penggunaan sistem logistik, pemeliharaan armada, dan alur kerja antar-divisi disajikan secara terstruktur dan selalu diperbarui.
@@ -45,3 +38,10 @@ Portal Wiki ini dibangun sebagai standar acuan operasional digital terpusat bagi
 
 !!! important "Dukungan Teknis & Helpdesk"
     Jika Anda mengalami kendala pendaftaran nomor handphone, lupa kredensial akun, atau menemukan masalah teknis pada aplikasi internal, silakan hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)** atau tim IT Support Jeje Trans.
+
+---
+
+!!! info "📖 Panduan untuk Penulis & Kontributor Dokumentasi"
+    Bagi tim atau PIC yang akan menulis, menyusun, atau memperbarui artikel panduan sistem, diwajibkan untuk membaca dan mengikuti acuan standar di **[Panduan Penulisan Dokumentasi Wiki (tutorial.md)](tutorial.md)**.
+    
+    Panduan tersebut mencakup aturan hierarki direktori, tabel panduan langkah 2-kolom bersisian, penomoran urut otomatis (`sane_lists`), penyisipan gambar, dan penggunaan komponen UI interaktif.

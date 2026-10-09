@@ -1,4 +1,4 @@
 title: Login
 nav:
-  - "Login": "login"
+  - index.md
   - ...
