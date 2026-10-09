@@ -60,12 +60,3 @@ Sistem akan menampilkan jendela sembulan (*modal dialog*) untuk konfirmasi reset
     Jika driver sedang dalam perjalanan mendesak dan butuh masuk ke aplikasi secara instan tanpa melakukan reset PIN akun permanen, tim Driver Management dapat menerbitkan **One-Time Login Token (8-Digit)** melalui menu token darurat.
 
 ---
-
-## 📋 Tabel Rincian Opsi Reset PIN
-
-| Opsi Reset | Nilai PIN | Keterangan & Kasus Penggunaan |
-| :--- | :--- | :--- |
-| **Default Reset** | `123456` | Tekan langsung *Confirm Reset*. Cocok untuk reset cepat dan meminta driver mengganti PIN setelah berhasil masuk. |
-| **Custom PIN** | 6-Digit Angka | Ketikkan 6 angka pilihan driver sebelum menekan *Confirm Reset*. Cocok jika driver sudah menentukan PIN baru sendiri. |
-
----
