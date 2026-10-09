@@ -80,4 +80,4 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
 ---
 
 !!! tip "Bantuan & Layanan Kendala"
-    Jika Anda mengalami kendala saat masuk akun atau nomor belum terdaftar, silakan hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)** atau manfaatkan panduan [🔑 Lupa Password & PIN](forgot.md).
+    Jika Anda mengalami kendala saat masuk akun atau nomor belum terdaftar, silakan hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)** atau manfaatkan panduan [🔑 Lupa Password & PIN](lupa-password-pin.md).

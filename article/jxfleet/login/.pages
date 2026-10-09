@@ -1,5 +1,4 @@
 title: Login
 nav:
   - index.md
-  - "Lupa Password / PIN": "forgot"
   - ...
