@@ -18,12 +18,20 @@
         background-color: #E65100 !important;
     }
 
-    /* Image Centering Utility Class */
+    /* Image Centering & Dimension Preserving Utility Classes */
     .md-typeset img.center,
     img.center {
         display: block !important;
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+
+    /* Preserve HTML height/width presentational attributes over MkDocs default height:auto */
+    .md-typeset img[height] {
+        height: revert !important;
+    }
+    .md-typeset img[width] {
+        width: revert !important;
     }
 
     /* Page Metadata Badge Styling - Compact 11pt */
