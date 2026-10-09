@@ -1,7 +1,7 @@
 ---
 title: Panduan Penulisan Dokumentasi Wiki
 author: Tim Pengembang Sistem
-last_updated: 2026-10-09
+last_updated: 2026-10-09 07:07
 hide:
   - navigation
 ---
