@@ -32,9 +32,9 @@ Platform ini menghubungkan pengemudi (*driver*), tim operasional lapangan, dan p
           <img src="attachment/index/001.png" alt="Google Play Store" style="height: 100px; margin: 0 auto; display: block;">
         </a>
       </td>
-      <td style="vertical-align: middle; padding: 18px 20px; border-bottom: 1px solid var(--md-default-fg-color--lightest); line-height: 1.6;">
-        Aplikasi untuk perangkat <strong>iOS (Apple App Store)</strong> akan segera hadir (<em>upcoming</em>).<br>
-        Untuk saat ini, pengguna iOS dapat mengakses layanan JXFleet secara penuh melalui <strong>Mobile Web</strong> di <a href="https://web.jxfleet.com">web.jxfleet.com</a>.
+      <td style="vertical-align: middle; padding: 18px 20px; border-bottom: 1px solid var(--md-default-fg-color--lightest); line-height: 1.5;">
+        Versi <strong>iOS (App Store)</strong> segera hadir (<em>upcoming</em>).<br>
+        Akses saat ini via <strong>Mobile Web</strong>: <a href="https://web.jxfleet.com">web.jxfleet.com</a>.
       </td>
     </tr>
     <tr style="background: var(--md-code-bg-color);">
