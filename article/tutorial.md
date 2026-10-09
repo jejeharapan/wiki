@@ -241,6 +241,20 @@ docker compose ps
 
 ---
 
+### H. Tabel Langkah & Screenshot Bersisian (2 Kolom)
+
+Untuk membuat panduan alur yang sangat rapi dan ringkas, Anda dapat menyandingkan teks instruksi di kolom kiri dan gambar screenshot di kolom kanan:
+
+#### Sintaks Kode:
+```markdown
+| Langkah & Instruksi | Tampilan Layar |
+| :--- | :---: |
+| **1.** Akses halaman utama sistem di browser. | ![Langkah 1](attachment/001-login/001.png){ style="height: 250px;" } |
+| **2.** Masukkan email dan kata sandi Anda. | ![Langkah 2](attachment/001-login/002.png){ style="height: 250px;" } |
+```
+
+---
+
 ## 🚀 4. Alur Kerja Kontribusi (Git Workflow)
 
 1. Buat atau perbarui file `.md` di folder modul terkait di bawah `/article/`.
