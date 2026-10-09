@@ -1,4 +1,5 @@
 nav:
   - index.md
-  - "JXFleet": "jxfleet"
   - "TMS": "tms"
+  - "JXFleet": "jxfleet"
+  - "JXPeople": "jxpeople"

@@ -1,7 +1,7 @@
 ---
 title: "Generate One-Time Login Token"
 author: Asyraf Nur Adianto
-last_updated: 2026-10-09 11:05
+last_updated: 2026-10-09 11:08
 ---
 
 # Panduan Generate One-Time Login Token Driver
@@ -18,27 +18,18 @@ Panduan ini ditujukan bagi tim **Driver Management** dan Administrator untuk men
 
 ---
 
-## 🔄 Alur Kerja One-Time Login Token
+## 🔄 Alur Koordinasi One-Time Login Token
 
-Diagram berikut mengilustrasikan alur koordinasi antara mitra pengemudi, tim Driver Management, dan sistem JXFleet:
+Penerbitan dan penggunaan One-Time Login Token berlangsung secara terkoordinasi antara driver di lapangan, tim Driver Management di web admin, serta sistem JXFleet:
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Driver as Driver (Lapangan)
-    actor DM as Tim Driver Management (Web Admin)
-    participant Sys as Sistem JXFleet (Server)
-    participant App as JXFleet Driver (Mobile App/Web)
-
-    Driver->>DM: Menghubungi & meminta akses login darurat
-    DM->>Sys: Akses Driver Management > Account > ⋮ > "Generate Token"
-    Sys-->>DM: Terbitkan 8-Digit One-Time Token numerik
-    DM->>Driver: Kirimkan 8-digit token via WhatsApp / SMS / Telepon
-    Driver->>App: Buka aplikasi, pilih "Login Cara Lainnya"
-    Driver->>App: Input 8-digit token & tekan Masuk
-    App->>Sys: Verifikasi & konsumsi token
-    Sys-->>App: Token hangus (expired) & sesi login aktif
-```
+| Tahap | Pihak & Platform | Tindakan & Penjelasan |
+| :---: | :--- | :--- |
+| **1** | **Driver Lapangan** ➔ **Driver Management** | Driver menghubungi tim Driver Management meminta bantuan akses masuk darurat (misal: akibat lupa PIN saat bersiap jalan). |
+| **2** | **Driver Management** ➔ **Web Admin** | Petugas mencari akun driver di [web.jxfleet.com](https://web.jxfleet.com), klik tombol **`⋮`**, dan memilih menu **Generate Token**. |
+| **3** | **Sistem JXFleet** | Sistem menerbitkan jendela sembulan konfirmasi yang memuat **8-digit kode token numerik acak**. |
+| **4** | **Driver Management** ➔ **Driver Lapangan** | Petugas menyalin dan mengirimkan kode token kepada driver melalui saluran komunikasi internal (WhatsApp / SMS / Telepon). |
+| **5** | **Driver Lapangan** ➔ **Mobile App / Web** | Driver membuka aplikasi JXFleet, memilih menu **Login Cara Lainnya**, memasukkan 8-digit token, lalu menekan tombol masuk. |
+| **6** | **Sistem JXFleet** | Sistem memverifikasi token, membuka sesi kerja driver, dan secara otomatis **menghanguskan (*invalidate*)** token tersebut. |
 
 ---
 
