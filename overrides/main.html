@@ -34,6 +34,16 @@
         width: revert !important;
     }
 
+    /* Clickable Zoom-in Cursor on Documentation Images */
+    .md-typeset img:not(a img) {
+        cursor: zoom-in;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .md-typeset img:not(a img):hover {
+        opacity: 0.95;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
     /* Page Metadata Badge Styling - Compact 11pt */
     .doc-metadata {
         display: flex;
@@ -60,6 +70,91 @@
     .md-nav__caption {
         display: none !important;
     }
+
+    /* Lightbox Modal Popup Styles */
+    .wiki-image-modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        background-color: rgba(15, 23, 42, 0.88);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 24px;
+        opacity: 0;
+        transition: opacity 0.25s ease-in-out;
+    }
+
+    .wiki-image-modal.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .wiki-image-modal-content {
+        position: relative;
+        max-width: 92vw;
+        max-height: 86vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: scale(0.96);
+        transition: transform 0.25s ease-out;
+    }
+
+    .wiki-image-modal.active .wiki-image-modal-content {
+        transform: scale(1);
+    }
+
+    .wiki-image-modal-img {
+        max-width: 100%;
+        max-height: 80vh;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
+        background-color: #ffffff;
+    }
+
+    .wiki-image-modal-caption {
+        margin-top: 12px;
+        color: #F1F5F9;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px 16px;
+        border-radius: 9999px;
+        max-width: 80vw;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .wiki-image-modal-close {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        background: rgba(255, 255, 255, 0.15);
+        border: none;
+        color: #FFFFFF;
+        font-size: 26px;
+        line-height: 1;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .wiki-image-modal-close:hover {
+        background: rgba(230, 81, 0, 0.9);
+        transform: scale(1.1);
+    }
 </style>
 {% endblock %}
 
@@ -78,4 +173,88 @@
     </div>
   {% endif %}
   {{ super() }}
+
+  <!-- Image Lightbox Modal -->
+  <div id="wikiImageModal" class="wiki-image-modal" role="dialog" aria-modal="true" aria-label="Pratinjau Gambar">
+    <button class="wiki-image-modal-close" id="wikiModalCloseBtn" aria-label="Tutup Pratinjau">&times;</button>
+    <div class="wiki-image-modal-content">
+      <img id="wikiModalImg" class="wiki-image-modal-img" src="" alt="Pratinjau Gambar" />
+      <div id="wikiModalCaption" class="wiki-image-modal-caption"></div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script>
+  (function() {
+    function initImageModal() {
+      const modal = document.getElementById('wikiImageModal');
+      const modalImg = document.getElementById('wikiModalImg');
+      const modalCaption = document.getElementById('wikiModalCaption');
+      const closeBtn = document.getElementById('wikiModalCloseBtn');
+
+      if (!modal || !modalImg) return;
+
+      function openModal(imgSrc, altText) {
+        modalImg.src = imgSrc;
+        if (altText && altText.trim().length > 0) {
+          modalCaption.textContent = altText;
+          modalCaption.style.display = 'block';
+        } else {
+          modalCaption.style.display = 'none';
+        }
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+        setTimeout(function() {
+          if (!modal.classList.contains('active')) {
+            modalImg.src = '';
+          }
+        }, 250);
+      }
+
+      // Delegate click on all documentation images (except images wrapped in links)
+      document.addEventListener('click', function(e) {
+        const targetImg = e.target.closest('.md-typeset img');
+        if (!targetImg) return;
+
+        // If inside an anchor tag that leads to a link, do not intercept
+        if (targetImg.closest('a')) return;
+
+        e.preventDefault();
+        openModal(targetImg.currentSrc || targetImg.src, targetImg.alt);
+      });
+
+      // Close on close button click
+      if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+      }
+
+      // Close when clicking outside image content
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal || e.target.classList.contains('wiki-image-modal-content')) {
+          closeModal();
+        }
+      });
+
+      // Close on Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          closeModal();
+        }
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initImageModal);
+    } else {
+      initImageModal();
+    }
+  })();
+</script>
 {% endblock %}
