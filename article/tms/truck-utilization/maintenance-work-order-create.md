@@ -119,10 +119,3 @@ flowchart TD
 > *\*Wajib mengisi minimal salah satu antara **Link Foto** atau **Upload File**.*
 
 ---
-
-## 🔗 Panduan Terkait Modul Truck Utilization
-
-- [📋 Panduan Update Status Scheduled ke Ongoing](draft.md)
-- [✅ Panduan Penyelesaian Work Order (Status Completed)](draft.md)
-- [📦 Panduan Bulk Upload Jadwal Maintenance Armada](draft.md)
-- [🏠 Kembali ke Beranda Portal Wiki](../../index.md)
