@@ -1,7 +1,7 @@
 ---
-title: "[UPCOMING] Apa itu JXFleet?"
+title: Apa itu JXFleet?
 author: Asyraf Nur Adianto
-last_updated: 2026-10-09 07:30
+last_updated: 2026-10-09 07:38
 ---
 
 # Apa itu JXFleet?
@@ -12,13 +12,24 @@ Platform ini menghubungkan pengemudi (*driver*), tim operasional lapangan, dan p
 
 ---
 
-## 💻 Akses Platform JXFleet
+## 💻 Akses & Unduh Platform JXFleet
 
-| Platform | Alamat Akses / Aplikasi | Pengguna Utama |
-| :--- | :--- | :--- |
-| **Komputer (Desktop Web)** | `web.jxfleet.com` | Tim Ops, Admin & Manajemen |
-| **Mobile App (Android/iOS)** | **JXFleet Driver App** | Driver / Pengemudi |
-| **Mobile Web** | `web.jxfleet.com` | Driver / Mobile User |
+| Platform | Alamat Akses / Aplikasi | Pengguna Utama | Keterangan |
+| :--- | :--- | :--- | :--- |
+| **Komputer (Desktop Web)** | `web.jxfleet.com` | Tim Ops, Admin & Manajemen | Akses via Browser |
+| **Mobile App (Android)** | **JXFleet Driver App** | Driver / Pengemudi | Unduh di Google Play Store |
+| **Mobile Web (Android / iOS)** | `web.jxfleet.com` | Driver / Mobile User | Akses via Browser HP |
+
+---
+
+### 📱 Aplikasi Mobile Driver (Android)
+
+Bagi pengguna perangkat Android, aplikasi **JXFleet Driver** dapat diunduh langsung melalui Google Play Store:
+
+[![Get it on Google Play](attachment/index-001.png){ width="200" .center }](https://play.google.com/store/apps/details?id=com.jejeharapan.fms&pcampaignid=web_share)
+
+!!! info "Informasi Pengguna iOS (iPhone / iPad)"
+    Untuk saat ini, pengguna perangkat iOS dapat mengakses platform JXFleet secara penuh melalui versi **Mobile Web** pada peramban ponsel (*Safari / Chrome*) dengan mengunjungi [web.jxfleet.com](https://web.jxfleet.com).
 
 ---
 
