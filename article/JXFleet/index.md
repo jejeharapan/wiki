@@ -1,7 +1,7 @@
 ---
 title: "[UPCOMING] Apa itu JXFleet?"
 author: Asyraf Nur Adianto
-last_updated: 2026-10-09 07:18
+last_updated: 2026-10-09 07:30
 ---
 
 # Apa itu JXFleet?
@@ -22,5 +22,5 @@ Platform ini menghubungkan pengemudi (*driver*), tim operasional lapangan, dan p
 
 ---
 
-> [!NOTE]
-> Untuk pendaftaran nomor akun baru atau kendala akses platform, silakan hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)**.
+!!! note "Bantuan Akses & Pendaftaran Akun"
+    Untuk pendaftaran nomor akun baru atau kendala akses platform, silakan hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)**.

@@ -60,8 +60,8 @@ last_updated: 2026-10-09
 
 ### A. Judul & Sub-Judul (Headings)
 
-> [!NOTE]
-> Daftar Isi (Table of Contents / TOC) di sisi kanan secara otomatis dibatasi hingga tingkat `##` (Level 2 Heading). Sub-judul tingkat 3 (`###`) dan 4 (`####`) tetap dapat ditulis untuk pengelompokan isi artikel.
+!!! note "Pembatasan Daftar Isi (TOC)"
+    Daftar Isi (Table of Contents / TOC) di sisi kanan secara otomatis dibatasi hingga tingkat `##` (Level 2 Heading). Sub-judul tingkat 3 (`###`) dan 4 (`####`) tetap dapat ditulis untuk pengelompokan isi artikel.
 
 #### Sintaks Kode:
 ```markdown
@@ -96,32 +96,32 @@ Gunakan sintaks persentase ukuran dan class `.center` agar gambar berada di posi
 
 #### Sintaks Kode:
 ```markdown
-> [!NOTE]
-> Ini adalah contoh catatan informasi umum operasional.
+!!! note "Judul Catatan"
+    Ini adalah contoh catatan informasi umum operasional.
 
-> [!TIP]
-> Ini adalah tips efisiensi atau trik mempercepat proses kerja.
+!!! tip "Judul Tips"
+    Ini adalah tips efisiensi atau trik mempercepat proses kerja.
 
-> [!WARNING]
-> Ini adalah peringatan mengenai potensi kesalahan pengguna (*user error*).
+!!! warning "Judul Peringatan"
+    Ini adalah peringatan mengenai potensi kesalahan pengguna (*user error*).
 
-> [!IMPORTANT]
-> Ini adalah prosedur kritis yang wajib dipatuhi demi keamanan data.
+!!! important "Judul Penting"
+    Ini adalah prosedur kritis yang wajib dipatuhi demi keamanan data.
 ```
 
 #### Hasil Tampilan (Preview):
 
-> [!NOTE]
-> Ini adalah contoh catatan informasi umum operasional.
+!!! note "Judul Catatan"
+    Ini adalah contoh catatan informasi umum operasional.
 
-> [!TIP]
-> Ini adalah tips efisiensi atau trik mempercepat proses kerja.
+!!! tip "Judul Tips"
+    Ini adalah tips efisiensi atau trik mempercepat proses kerja.
 
-> [!WARNING]
-> Ini adalah peringatan mengenai potensi kesalahan pengguna (*user error*).
+!!! warning "Judul Peringatan"
+    Ini adalah peringatan mengenai potensi kesalahan pengguna (*user error*).
 
-> [!IMPORTANT]
-> Ini adalah prosedur kritis yang wajib dipatuhi demi keamanan data.
+!!! important "Judul Penting"
+    Ini adalah prosedur kritis yang wajib dipatuhi demi keamanan data.
 
 ---
 

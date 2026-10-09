@@ -1,7 +1,7 @@
 ---
 title: "[UPCOMING] Login"
 author: Asyraf Nur Adianto
-last_updated: 2026-10-09 07:25
+last_updated: 2026-10-09 07:30
 ---
 
 # Panduan Login JXFleet
@@ -10,10 +10,11 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
 
 ---
 
-> [!IMPORTANT]
-> Pastikan nomor handphone yang Anda gunakan telah didaftarkan terlebih dahulu oleh **Tim Pengembang JXFleet (JXFleet Developer Team)**.
-> - **Akses Komputer (Desktop Web)**: Menggunakan **Password**.
-> - **Akses Mobile (App & Web)**: Menggunakan **PIN 6-digit** (PIN default pertama kali: `123456`) atau **One-Time Token 8-digit**.
+!!! important "Persyaratan Pendaftaran & Kredensial"
+    Pastikan nomor handphone yang Anda gunakan telah didaftarkan terlebih dahulu oleh **Tim Pengembang JXFleet (JXFleet Developer Team)**.
+    
+    - **Akses Komputer (Desktop Web)**: Menggunakan **Password**.
+    - **Akses Mobile (App & Web)**: Menggunakan **PIN 6-digit** (PIN default pertama kali: `123456`) atau **One-Time Token 8-digit**.
 
 ---
 
@@ -57,8 +58,8 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
 
     ### B. Alternatif: Login dengan One-Time Token (Akses Cepat):
 
-    > [!TIP]
-    > Gunakan metode ini jika Anda mengalami lupa PIN akun dan ingin langsung mengakses aplikasi secara cepat tanpa perlu melakukan proses reset PIN terlebih dahulu.
+    !!! tip "Akses Instan Tanpa Reset PIN"
+        Gunakan metode ini jika Anda mengalami lupa PIN akun dan ingin langsung mengakses aplikasi secara cepat tanpa perlu melakukan proses reset PIN terlebih dahulu.
 
     1. Dapatkan **8-digit One-Time Token** dari Tim Pengembang JXFleet / Admin Support.
     2. Pada halaman awal aplikasi **JXFleet Driver**, tekan tombol **Login Cara Lainnya**.
@@ -97,8 +98,8 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
 
     ### B. Alternatif: Login dengan One-Time Token (Akses Cepat):
 
-    > [!TIP]
-    > Gunakan metode ini jika Anda lupa PIN akun dan butuh masuk ke Mobile Web secara instan tanpa mereset PIN.
+    !!! tip "Akses Instan Tanpa Reset PIN"
+        Gunakan metode ini jika Anda lupa PIN akun dan butuh masuk ke Mobile Web secara instan tanpa mereset PIN.
 
     1. Dapatkan **8-digit One-Time Token** dari Tim Pengembang JXFleet / Admin Support.
     2. Akses `web.jxfleet.com` ➔ Pilih **Login as Driver** ➔ Tekan opsi **Login Cara Lainnya**.
@@ -115,5 +116,5 @@ Panduan ini menjelaskan alur masuk (*login*) ke platform **JXFleet** untuk selur
 
 ---
 
-> [!TIP]
-> Jika Anda mengalami kendala saat masuk akun atau nomor belum terdaftar, silakan hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)** atau manfaatkan panduan [🔑 Lupa Password](002-passwordLupa.md) / [📲 Lupa PIN](003-pinLupa.md).
+!!! tip "Bantuan & Layanan Kendala"
+    Jika Anda mengalami kendala saat masuk akun atau nomor belum terdaftar, silakan hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)** atau manfaatkan panduan [🔑 Lupa Password](002-passwordLupa.md) / [📲 Lupa PIN](003-pinLupa.md).

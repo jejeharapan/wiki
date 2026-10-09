@@ -1,7 +1,7 @@
 ---
 title: Beranda
 author: Asyraf Nur Adianto
-last_updated: 2026-10-09 07:18
+last_updated: 2026-10-09 07:30
 ---
 
 # Selamat Datang di Wiki Jeje Harapan Transindo (Jeje Trans)
@@ -10,9 +10,8 @@ Pusat informasi resmi, dokumentasi teknis, dan panduan operasional langkah-demi-
 
 ---
 
-> [!TIP]
-> **Panduan Kontributor Dokumentasi**
-> Ingin menyusun atau memperbarui artikel panduan sistem baru? Pelajari standar tata letak, komponen UI interaktif, dan format gambar pada [📖 Panduan Penulisan Dokumentasi Wiki (MkDocs)](tutorial.md).
+!!! tip "Panduan Kontributor Dokumentasi"
+    Ingin menyusun atau memperbarui artikel panduan sistem baru? Pelajari standar tata letak, komponen UI interaktif, dan format gambar pada [📖 Panduan Penulisan Dokumentasi Wiki (MkDocs)](tutorial.md).
 
 ---
 
@@ -57,6 +56,5 @@ Portal Wiki ini dibangun sebagai standar acuan operasional digital terpusat bagi
 
 ---
 
-> [!IMPORTANT]
-> **Dukungan Teknis & Helpdesk**
-> Jika Anda mengalami kendala pendaftaran nomor handphone, lupa kredensial akun, atau menemukan masalah teknis pada aplikasi internal, silakan hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)** atau tim IT Support Jeje Trans.
+!!! important "Dukungan Teknis & Helpdesk"
+    Jika Anda mengalami kendala pendaftaran nomor handphone, lupa kredensial akun, atau menemukan masalah teknis pada aplikasi internal, silakan hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)** atau tim IT Support Jeje Trans.
