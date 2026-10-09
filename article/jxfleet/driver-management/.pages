@@ -1,4 +1,5 @@
 title: Driver Management
 nav:
   - index.md
-  - reset-password.md
+  - reset-pin-driver.md
+  - generate-one-time-login-token.md
