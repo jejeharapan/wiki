@@ -48,5 +48,6 @@ Berikut adalah dokumentasi langkah operasional yang dieksekusi oleh Tim Driver M
 | [**Reset PIN Driver**](driver-reset-pin.md) | Penyetelan ulang 6-digit PIN akun pengemudi ke nilai standar (`123456`) atau PIN kustom baru. | Autentikasi |
 | [**Generate One-Time Login Token**](driver-generate-token-login.md) | Penerbitan 8-digit kode token sekali pakai untuk akses login darurat pengemudi di perjalanan tanpa mereset PIN permanen. | Akses Darurat |
 | [**Deaktivasi & Hapus Akun Driver**](driver-deactivate-account.md) | Tata cara menonaktifkan sementara akun driver (misal: cuti/skorsing) atau menghapus akun driver dari sistem. | Manajemen Akun |
+| [**Sinkronisasi Tugas Pengiriman**](shipment-task-sync.md) | Prosedur pemicu manual pengiriman data tugas dari TMS ke JXFleet saat tag penugasan belum muncul. | Integrasi Sistem |
 
 ---

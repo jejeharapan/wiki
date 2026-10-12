@@ -1,7 +1,4 @@
 title: JXFleet
 nav:
   - index.md
-  - "Login": "login"
-  - "Mitra Driver": "driver"
-  - "Tim Driver Management": "driver-manager"
-  - "Tim Transport Control / Planner": "shipment-manager"
+  - "FAQ": "faq"

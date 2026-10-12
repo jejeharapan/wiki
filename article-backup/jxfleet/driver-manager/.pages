@@ -4,3 +4,4 @@ nav:
   - driver-reset-pin.md
   - driver-generate-token-login.md
   - driver-deactivate-account.md
+  - shipment-task-sync.md

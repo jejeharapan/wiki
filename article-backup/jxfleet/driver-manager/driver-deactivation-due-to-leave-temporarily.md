@@ -1,4 +1,4 @@
-Menonaktifkan sementara akun driver:
+Menonaktifkan sementara akun driver karena cuti, libur, dan sebagainya:
 - Driver tidak dapat melakukan login selama ternonaktifkan
 - Reaktivasi dapat dilakukan kembali dikemudian waktu
 - Tahapan:
