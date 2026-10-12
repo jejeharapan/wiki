@@ -1,7 +1,7 @@
 ---
 title: "Penanganan Kendala Tugas Tidak Muncul pada Aplikasi Driver (Task Not Found)"
 author: Asyraf Nur Adianto
-last_updated: 2026-10-12 13:42
+last_updated: 2026-10-12 14:14
 ---
 
 # Penanganan Kendala Tugas Tidak Muncul pada Aplikasi Driver
@@ -12,14 +12,15 @@ Panduan pemecahan masalah (*troubleshooting*) ini ditujukan bagi tim operasional
 
 ## 📌 Identifikasi Penyebab Utama
 
-Kendala tugas yang tidak muncul pada aplikasi mobile pengemudi umumnya disebabkan oleh salah satu dari 4 (empat) kondisi berikut:
+Kendala tugas yang tidak muncul pada aplikasi mobile pengemudi umumnya disebabkan oleh salah satu dari 5 (lima) kondisi berikut:
 
 | Kondisi | Akar Penyebab Masalah | Pihak yang Menangani |
 | :---: | :--- | :--- |
 | **Kondisi 1** | Penugasan di TMS belum tersinkronisasi / belum terkirim ke JXFleet. | Tim Operasional (via TMS) |
 | **Kondisi 2** | Penugasan driver sudah ada di TMS, namun perlu sinkronisasi ulang data pengemudi ke JXFleet. | Tim Operasional (via TMS) |
-| **Kondisi 3** | Terdapat dua atau lebih penugasan aktif dengan waktu keberangkatan (*departure time*) yang bersamaan. | Tim Pengembang JXFleet |
-| **Kondisi 4** | Jadwal tugas belum memasuki rentang periode visibilitas (*visibility window*) pada aplikasi driver. | Tim Pengembang JXFleet |
+| **Kondisi 3** | Status tugas pada JXFleet masih dalam kondisi tersembunyi (*Hidden*). | Tim Operasional (via JXFleet Web) |
+| **Kondisi 4** | Terdapat dua atau lebih penugasan aktif dengan waktu keberangkatan (*departure time*) yang bersamaan / bentrok. | Tim Operasional (via *Hide Task*) |
+| **Kondisi 5** | Jadwal tugas belum memasuki rentang periode visibilitas (*visibility window*) pada aplikasi driver. | Tim Pengembang JXFleet |
 
 ---
 
@@ -74,31 +75,53 @@ Penugasan sudah dibuat di TMS namun nama pengemudi baru saja diperbarui atau bel
 
 ---
 
-### Kondisi 3: Bentrok Waktu Keberangkatan pada Penugasan Driver
+### Kondisi 3: Status Tugas Masih dalam Kondisi "Hidden"
 
 **Deskripsi Permasalahan**:
-Tugas sudah terdaftar dan ter-assign dengan benar ke driver di JXFleet Web (*Change Status V2*), namun driver memiliki lebih dari satu tugas dengan jadwal keberangkatan (*departure time*) yang persis sama, sehingga sistem aplikasi menahan tampilan tugas kedua agar tidak tumpang tindih.
+Tugas pengiriman sudah tersinkronisasi dan ter-assign ke pengemudi di JXFleet Web, namun status tugas masih berada dalam kondisi nonaktif/tersembunyi (*Hidden*), sehingga tidak ditampilkan pada antarmuka aplikasi driver.
 
 **Tahapan Penanganan**:
 
 1. **Pengecekan di JXFleet Web**:
-   Buka menu **Shipment** ➔ **Change Status V2** di [web.jxfleet.com](https://web.jxfleet.com), cari akun driver terkait, dan periksa kolom jadwal keberangkatan (*departure time*) pada seluruh tugas aktifnya.
-2. **Identifikasi Jadwal Duplikat**:
-   Periksa apakah terdapat jadwal keberangkatan yang bersamaan/bentrok pada dua atau lebih tugas yang diberikan kepada driver tersebut.
-3. **Eskalasi ke Tim Pengembang JXFleet**:
-   Hubungi **Tim Pengembang JXFleet (JXFleet Developer Team)** melalui kanal dukungan operasional resmi untuk penyesuaian jadwal atau status penugasan.
-4. **Penyampaian Informasi Kendala**:
-   Sampaikan rincian pendukung berikut kepada tim pengembang:
-   - Nomor **Order ID / Trip ID** tugas yang mengalami jadwal bentrok.
-   - **Nama Lengkap & Nomor HP** mitra pengemudi terdaftar.
-   - Tangkapan layar (*screenshot*) baris penugasan pada menu *Change Status V2*.
+   Buka portal [web.jxfleet.com](https://web.jxfleet.com), masuk ke menu **Shipment** ➔ **Change Status V2**, alihkan tab ke mode **All**, lalu lakukan pencarian berdasarkan **Nama Driver** atau **Order ID**, dan pastikan filter Status Task telah memilih **Hidden** sebagai salah satu pilihannya.
+2. **Buka Menu Tindakan Data Order**:
+   Pada baris data order yang ditemukan, klik ikon titik tiga (**⋮**) di bagian paling kanan data.
+3. **Pilih Menu Activate Task**:
+   Tekan pilihan menu **Activate Task**.
+4. **Konfirmasi Pengaktifan**:
+   Konfirmasi dengan menekan tombol **Activate Task** pada jendela dialog modal yang muncul.
+5. **Konfirmasi pada Aplikasi Driver**:
+   Minta mitra pengemudi melakukan *pull-to-refresh* pada aplikasi **JXFleet Driver** di ponselnya untuk memastikan tugas telah berhasil tampil.
 
 ---
 
-### Kondisi 4: Tugas Belum Memasuki Periode Visibilitas Aplikasi
+### Kondisi 4: Bentrok Waktu Keberangkatan pada Penugasan Driver
 
 **Deskripsi Permasalahan**:
-Tugas sudah ter-assign dengan benar di JXFleet Web dan tidak ada jadwal bentrok, namun jadwal keberangkatan tugas masih terlalu jauh di masa depan sehingga belum masuk ke dalam rentang waktu tampilan (*visibility window*) di aplikasi pengemudi.
+Tugas sudah terdaftar dan ter-assign dengan benar ke driver di JXFleet Web (*Change Status V2*), namun driver memiliki lebih dari satu tugas dengan jadwal keberangkatan (*departure time*) yang persis sama, sehingga sistem aplikasi menahan tampilan tugas agar tidak tumpang tindih. Tim operasional dapat menyelesaikan kendala ini secara mandiri dengan menyembunyikan (*hide*) tugas yang belum akan dikerjakan terlebih dahulu.
+
+**Tahapan Penanganan**:
+
+1. **Pengecekan di JXFleet Web**:
+   Buka portal [web.jxfleet.com](https://web.jxfleet.com), masuk ke menu **Shipment** ➔ **Change Status V2**, alihkan tab ke mode **All**, lalu lakukan pencarian berdasarkan **Nama Driver** atau **Order ID**.
+2. **Buka Menu Tindakan pada Tugas yang Ditunda**:
+   Identifikasi tugas yang jadwalnya bentrok namun belum akan dikerjakan saat ini. Pada baris data order tersebut, klik ikon titik tiga (**⋮**) di bagian paling kanan data.
+3. **Pilih Menu Hide Task**:
+   Tekan pilihan menu **Hide Task**.
+4. **Konfirmasi Penyembunyian**:
+   Konfirmasi dengan menekan tombol **Hide Task** pada jendela dialog modal yang muncul.
+5. **Verifikasi pada Aplikasi Driver**:
+   Minta mitra pengemudi melakukan *pull-to-refresh* pada aplikasi ponselnya. Tugas utama yang tidak disembunyikan akan langsung tampil dan dapat dikerjakan.
+
+!!! tip "Mengaktifkan Kembali Tugas yang Disembunyikan"
+    Setelah tugas pertama selesai dijalankan oleh mitra pengemudi, buka kembali menu **Change Status V2**, cari data tugas yang sebelumnya di-hide (pastikan filter *Hidden* aktif), lalu aktifkan kembali dengan memilih opsi **Activate Task** sesuai panduan pada **Kondisi 3**.
+
+---
+
+### Kondisi 5: Tugas Belum Memasuki Periode Visibilitas Aplikasi
+
+**Deskripsi Permasalahan**:
+Tugas sudah ter-assign dengan benar di JXFleet Web, status tidak dalam kondisi *Hidden*, dan tidak ada jadwal bentrok, namun jadwal keberangkatan tugas masih terlalu jauh di masa depan sehingga belum masuk ke dalam rentang waktu tampilan (*visibility window*) di aplikasi pengemudi.
 
 **Tahapan Penanganan**:
 
@@ -123,8 +146,9 @@ Tugas sudah ter-assign dengan benar di JXFleet Web dan tidak ada jadwal bentrok,
 | **1** | **Laporan Masuk** | Driver melapor bahwa tugas belum muncul di aplikasi ponsel. | Driver ➔ Tim Ops |
 | **2** | **Pemeriksaan di JXFleet Web** | Buka menu *Shipment* ➔ *Change Status V2* (mode *All*) dan cari Order ID / Nama Driver. | Tim Ops |
 | **3** | **Tugas Belum Ada di JXFleet** | Buka TMS Detail Shipment, tekan tombol **Submit to JXFleet**, tunggu 1–2 menit, lalu cek kembali. | Tim Ops |
-| **4** | **Data Sudah Masuk & Sesuai** | Minta driver melakukan *pull-to-refresh* pada aplikasi ponselnya. Tugas siap dijalankan. | Driver |
-| **5** | **Tugas Ada tapi Tidak Tampil di HP** | Indikasi bentrok jam keberangkatan (*departure*) atau belum masuk periode visibilitas. Eskalasikan ke Developer. | Tim Ops ➔ JXFleet Developer |
-| **6** | **Sinkronisasi Gagal / Error** | Jika tugas tetap tidak muncul setelah ditekan *Submit*, kirimkan Order ID dan tangkapan layar ke Developer. | Tim Ops ➔ JXFleet Developer |
+| **4** | **Data Driver Belum Sesuai** | Perbarui data driver di TMS, tekan **Submit to JXFleet**, tunggu 1–2 menit, lalu cek kembali. | Tim Ops |
+| **5** | **Status Tugas "Hidden"** | Pada menu *Change Status V2*, tekan titik 3 (**⋮**) ➔ **Activate Task** ➔ Konfirmasi. | Tim Ops |
+| **6** | **Jadwal Keberangkatan Bentrok** | Pada tugas yang belum dikerjakan, tekan titik 3 (**⋮**) ➔ **Hide Task** ➔ Konfirmasi. | Tim Ops |
+| **7** | **Belum Masuk Periode Visibilitas** | Jika jadwal masih di luar *visibility window*, eskalasikan ke Tim Pengembang JXFleet. | Tim Ops ➔ JXFleet Developer |
 
 ---
