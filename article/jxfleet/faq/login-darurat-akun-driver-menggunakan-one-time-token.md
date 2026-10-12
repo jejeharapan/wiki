@@ -1,7 +1,7 @@
 ---
 title: "Login Darurat Akun Driver Menggunakan One-Time Token"
 author: Asyraf Nur Adianto
-last_updated: 2026-10-12 13:05
+last_updated: 2026-10-12 13:36
 ---
 
 # Login Darurat Akun Driver Menggunakan One-Time Token
@@ -30,28 +30,31 @@ Metode login menggunakan One-Time Token digunakan pada dua skenario operasional 
 
 ## 🛠️ Tata Cara Login Menggunakan One-Time Token
 
-Pilih platform yang Anda gunakan di bawah ini:
+!!! note "Sudut Pandang Mitra Pengemudi (Driver's Point of View)"
+    Seluruh langkah-demi-langkah di bawah ini disusun dari **sudut pandang mitra pengemudi (*driver*)**, yaitu tindakan yang dilakukan langsung pada perangkat ponsel pengemudi di lapangan (baik dioperasikan secara mandiri oleh rekan driver maupun dipandu/diperiksa oleh tim internal).
+
+Pilih platform yang digunakan pada ponsel driver:
 
 === "📱 Mobile App (Android / iOS)"
 
-    Berikut adalah langkah-langkah masuk menggunakan One-Time Token pada aplikasi **JXFleet Driver**:
+    Berikut adalah langkah-langkah yang dilakukan driver pada aplikasi **JXFleet Driver**:
 
-    | Langkah & Instruksi | Tampilan Layar |
+    | Langkah & Instruksi (Sisi Driver) | Tampilan Layar Ponsel |
     | :--- | :---: |
-    | **1.** Hubungi Tim Driver Management atau Tim Pengembang JXFleet untuk mendapatkan **8-digit One-Time Token**. | *(Diterbitkan oleh Admin / Support)* |
-    | **2.** Buka aplikasi **JXFleet Driver** di ponsel Anda. Pada halaman awal, tekan opsi **Login Cara Lainnya**. | ![Pilih Login Cara Lainnya Mobile App](attachment/login-darurat-akun-driver-menggunakan-one-time-token/001.png){ style="height: 250px;" } |
-    | **3.** Masukkan atau tempelkan (*paste*) 8-digit One-Time Token yang telah diberikan, lalu tekan tombol masuk. | ![Input Token Mobile App](attachment/login-darurat-akun-driver-menggunakan-one-time-token/002.png){ style="height: 250px;" } |
-    | **4.** Sistem akan memvalidasi token dan Anda langsung diarahkan ke halaman utama aplikasi dengan sesi aktif. | ![Halaman Utama Mobile App via Token](attachment/login-darurat-akun-driver-menggunakan-one-time-token/003.png){ style="height: 250px;" } |
+    | **1.** Driver menghubungi Tim Driver Management atau Tim Pengembang JXFleet untuk meminta **8-digit One-Time Token**. | *(Diterbitkan oleh Admin / Support)* |
+    | **2.** Buka aplikasi **JXFleet Driver** pada ponsel. Pada halaman awal, pilih menu **Login Cara Lainnya**. | ![Pilih Login Cara Lainnya Mobile App](attachment/login-darurat-akun-driver-menggunakan-one-time-token/001.png){ style="height: 250px;" } |
+    | **3.** Masukkan atau tempelkan (*paste*) 8-digit One-Time Token yang telah diterima, lalu tekan tombol masuk. | ![Input Token Mobile App](attachment/login-darurat-akun-driver-menggunakan-one-time-token/002.png){ style="height: 250px;" } |
+    | **4.** Sesi berhasil diverifikasi dan driver langsung masuk ke halaman utama aplikasi untuk melanjutkan tugas armada. | ![Halaman Utama Mobile App via Token](attachment/login-darurat-akun-driver-menggunakan-one-time-token/003.png){ style="height: 250px;" } |
 
 === "🌐 Mobile Web"
 
-    Bagi pengguna peramban ponsel (*Chrome/Safari*) di `web.jxfleet.com`:
+    Berikut adalah langkah-langkah yang dilakukan driver melalui peramban ponsel (*Chrome / Safari*) di `web.jxfleet.com`:
 
-    | Langkah & Instruksi | Tampilan Layar |
+    | Langkah & Instruksi (Sisi Driver) | Tampilan Layar Ponsel |
     | :--- | :---: |
-    | **1.** Dapatkan **8-digit One-Time Token** dari Tim Driver Management atau Tim Pengembang JXFleet. | *(Diterbitkan oleh Admin / Support)* |
-    | **2.** Buka peramban ponsel, akses [web.jxfleet.com](https://web.jxfleet.com), pilih **Login as Driver**, kemudian klik tautan **Login Cara Lainnya**. | ![Pilih Login Cara Lainnya Mobile Web](attachment/login-darurat-akun-driver-menggunakan-one-time-token/004.png){ style="height: 250px;" } |
-    | **3.** Masukkan atau tempelkan (*paste*) 8-digit One-Time Token pada kolom yang disediakan. | ![Input Token Mobile Web](attachment/login-darurat-akun-driver-menggunakan-one-time-token/005.png){ style="height: 250px;" } |
-    | **4.** Verifikasi berhasil dan Anda langsung masuk ke halaman dashboard Mobile Web. | ![Dashboard Mobile Web via Token](attachment/login-darurat-akun-driver-menggunakan-one-time-token/006.png){ style="height: 250px;" } |
+    | **1.** Driver meminta dan menerima **8-digit One-Time Token** dari Tim Driver Management atau Support JXFleet. | *(Diterbitkan oleh Admin / Support)* |
+    | **2.** Buka peramban di ponsel, kunjungi [web.jxfleet.com](https://web.jxfleet.com), pilih **Login as Driver**, lalu klik menu **Login Cara Lainnya**. | ![Pilih Login Cara Lainnya Mobile Web](attachment/login-darurat-akun-driver-menggunakan-one-time-token/004.png){ style="height: 250px;" } |
+    | **3.** Masukkan atau tempelkan (*paste*) 8-digit One-Time Token pada kolom input yang tersedia. | ![Input Token Mobile Web](attachment/login-darurat-akun-driver-menggunakan-one-time-token/005.png){ style="height: 250px;" } |
+    | **4.** Sesi berhasil aktif dan driver langsung diarahkan ke tampilan dashboard tugas Mobile Web. | ![Dashboard Mobile Web via Token](attachment/login-darurat-akun-driver-menggunakan-one-time-token/006.png){ style="height: 250px;" } |
 
 ---
