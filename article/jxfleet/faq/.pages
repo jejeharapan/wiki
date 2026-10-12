@@ -3,3 +3,5 @@ nav:
   - login-darurat-akun-driver-menggunakan-one-time-token.md
   - penanganan-kendala-tugas-tidak-muncul-pada-aplikasi-driver.md
   - penyesuaian-urutan-rute-pengiriman-driver.md
+  - penanganan-kesalahan-unggah-berkas-update-status-driver.md
+  - deaktivasi-sementara-akun-driver.md

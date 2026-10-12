@@ -5,3 +5,5 @@ nav:
   - driver-generate-token-login.md
   - driver-deactivate-account.md
   - shipment-task-sync.md
+  - shipment-task-order.md
+  - shipment-task-reset.md
